@@ -1,18 +1,16 @@
-﻿Build started 2/10/2016 9:48:15 PM.
-     1>Project "Q:\Classes\3-2\AI\AISafari\Intermediate\ProjectFiles\AISafari.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2/11/2016 1:48:57 PM.
+     1>Project "D:\Users\jrp3024\AI-Safari\AISafari\Intermediate\ProjectFiles\AISafari.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files (x86)\Epic Games\4.9\Engine\Build\BatchFiles\Build.bat" AISafariEditor Win64 Development "Q:\Classes\3-2\AI\AISafari\AISafari.uproject" -rocket -waitmutex
+         "C:\Program Files (x86)\Epic Games\4.9\Engine\Build\BatchFiles\Build.bat" AISafariEditor Win64 Development "D:\Users\jrp3024\AI-Safari\AISafari\AISafari.uproject" -rocket -waitmutex
          Compiling game modules for hot reload
-         Performing 2 actions (4 in parallel)
-         FlockerBase.cpp
-     1>Q:\Classes\3-2\AI\AISafari\Source\AISafari\BaseClasses\FlockerBase.cpp(134): warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-                 c:\program files (x86)\epic games\4.9\engine\source\runtime\core\public\math\Vector.h(519) : see declaration of 'FVector::ClampMaxSize'
-         [2/2] Link UE4Editor-AISafari-2227.dll
-            Creating library Q:\Classes\3-2\AI\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-2227.lib and object Q:\Classes\3-2\AI\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-2227.exp
+         Performing 2 actions (2 in parallel)
+         OctTreeBase.cpp
+         [2/2] Link UE4Editor-AISafari-9020.dll
+            Creating library D:\Users\jrp3024\AI-Safari\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-9020.lib and object D:\Users\jrp3024\AI-Safari\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-9020.exp
          -------- End Detailed Actions Stats -----------------------------------------------------------
-         Total build time: 2.96 seconds
-     1>Done Building Project "Q:\Classes\3-2\AI\AISafari\Intermediate\ProjectFiles\AISafari.vcxproj" (Build target(s)).
+         Total build time: 4.51 seconds
+     1>Done Building Project "D:\Users\jrp3024\AI-Safari\AISafari\Intermediate\ProjectFiles\AISafari.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.99
+Time Elapsed 00:00:04.59

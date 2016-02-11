@@ -78,7 +78,7 @@ void AFlockerBase::findLocal(){
 	//localFlockers.clear();
 	//localFlockerID.clear();
 
-	float closest = 1000;
+	float closest = 1000*1000;
 	sepV = FVector::ZeroVector;
 
 	for (int i = 0; i < numFlockers; i++){

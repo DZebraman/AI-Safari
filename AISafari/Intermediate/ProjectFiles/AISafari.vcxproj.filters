@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\AISafari.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E47E291D-9BD1-4CF4-BC20-81389F1D6242}</UniqueIdentifier>
+      <UniqueIdentifier>{D1C88F70-A241-4DDC-A95B-59813F7869D7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\AISafari.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{59AC5282-6F45-4939-81ED-B00518555655}</UniqueIdentifier>
+      <UniqueIdentifier>{8AE1BCD6-19D4-4172-83E3-7C64498BF44F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +24,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\AISafari">
-      <UniqueIdentifier>{5FE5558A-DA7B-4846-AE89-5CB3C0C492A1}</UniqueIdentifier>
+      <UniqueIdentifier>{040EF4C4-543D-45A4-B611-BFA599CE82D0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\AISafari\AISafari.Build.cs">
       <Filter>Source\AISafari</Filter>
@@ -42,34 +42,46 @@
       <Filter>Source\AISafari</Filter>
     </ClInclude>
     <Filter Include="Source\AISafari\BaseClasses">
-      <UniqueIdentifier>{DE85DA8A-1B98-4E2A-8A9C-EDD93CC334A5}</UniqueIdentifier>
+      <UniqueIdentifier>{D6714B5A-D9F7-43CF-A03C-F7CFCB69A98E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\AISafari\BaseClasses\ActorReferenceStruct.cpp">
+      <Filter>Source\AISafari\BaseClasses</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AISafari\BaseClasses\ActorReferenceStruct.h">
+      <Filter>Source\AISafari\BaseClasses</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\AISafari\BaseClasses\AutoAgent.cpp">
       <Filter>Source\AISafari\BaseClasses</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\AISafari\BaseClasses\AutoAgent.h">
       <Filter>Source\AISafari\BaseClasses</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\AISafari\BaseClasses\FlockerBase.h">
-      <Filter>Source\AISafari\BaseClasses</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\AISafari\BaseClasses\FlockerManagerBase.h">
-      <Filter>Source\AISafari\BaseClasses</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\AISafari\BaseClasses\ActorReferenceStruct.h">
-      <Filter>Source\AISafari\BaseClasses</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\Source\AISafari\BaseClasses\FlockerBase.cpp">
       <Filter>Source\AISafari\BaseClasses</Filter>
     </ClCompile>
+    <ClInclude Include="..\..\Source\AISafari\BaseClasses\FlockerBase.h">
+      <Filter>Source\AISafari\BaseClasses</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\AISafari\BaseClasses\FlockerManagerBase.cpp">
       <Filter>Source\AISafari\BaseClasses</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\AISafari\BaseClasses\ActorReferenceStruct.cpp">
+    <ClInclude Include="..\..\Source\AISafari\BaseClasses\FlockerManagerBase.h">
+      <Filter>Source\AISafari\BaseClasses</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AISafari\BaseClasses\OctTreeBase.cpp">
+      <Filter>Source\AISafari\BaseClasses</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AISafari\BaseClasses\OctTreeBase.h">
+      <Filter>Source\AISafari\BaseClasses</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\AISafari\BaseClasses\OctantBase.h">
+      <Filter>Source\AISafari\BaseClasses</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\AISafari\BaseClasses\OctantBase.cpp">
       <Filter>Source\AISafari\BaseClasses</Filter>
     </ClCompile>
   </ItemGroup>

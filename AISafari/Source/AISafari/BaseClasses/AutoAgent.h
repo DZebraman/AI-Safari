@@ -7,6 +7,9 @@
 #include "GameFramework/Actor.h"
 #include "AutoAgent.generated.h"
 
+//--------FWD Declaration-----------
+class OctantBase;
+
 UCLASS()
 class AISAFARI_API AAutoAgent : public AActor
 {
@@ -23,7 +26,9 @@ public:
 
 	//UPROPERY(EditAnywhere, Category = "init vars");
 	UPROPERTY(EditAnywhere, Category = "init var")
-	float maxSpeed;
+		float maxSpeed;
+
+	OctantBase* octantRef;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -33,6 +38,7 @@ public:
 	virtual FVector pursue(FVector target, FVector targetPrev);
 	virtual FVector evade(FVector target, FVector targetPrev);
 	virtual FVector arrive(FVector target);
+	virtual void setOctant(OctantBase* _octant);
 
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;

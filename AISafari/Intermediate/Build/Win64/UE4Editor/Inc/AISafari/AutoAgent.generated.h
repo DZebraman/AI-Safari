@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AISAFARI_AutoAgent_generated_h
 
-#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_RPC_WRAPPERS
-#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_INCLASS_NO_PURE_DECLS \
+#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_RPC_WRAPPERS
+#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAAutoAgent(); \
 	friend AISAFARI_API class UClass* Z_Construct_UClass_AAutoAgent(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AAutoAgent*>(this); }
 
 
-#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_INCLASS \
+#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_INCLASS \
 	private: \
 	static void StaticRegisterNativesAAutoAgent(); \
 	friend AISAFARI_API class UClass* Z_Construct_UClass_AAutoAgent(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AAutoAgent*>(this); }
 
 
-#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_STANDARD_CONSTRUCTORS \
+#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AAutoAgent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAutoAgent) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_ENHANCED_CONSTRUCTORS \
+#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API AAutoAgent(const AAutoAgent& InCopy); \
@@ -59,23 +59,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAutoAgent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AAutoAgent)
 
 
-#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_10_PROLOG
-#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_GENERATED_BODY_LEGACY \
+#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_PROLOG
+#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_RPC_WRAPPERS \
-	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_INCLASS \
-	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_STANDARD_CONSTRUCTORS \
+	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_RPC_WRAPPERS \
+	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_INCLASS \
+	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_GENERATED_BODY \
+#define AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_INCLASS_NO_PURE_DECLS \
-	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_13_ENHANCED_CONSTRUCTORS \
+	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_INCLASS_NO_PURE_DECLS \
+	AISafari_Source_AISafari_BaseClasses_AutoAgent_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

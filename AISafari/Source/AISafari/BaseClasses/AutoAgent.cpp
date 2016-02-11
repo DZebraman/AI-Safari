@@ -59,6 +59,8 @@ FVector AAutoAgent::arrive(FVector target){
 	return vel.ClampMaxSize(FMath::Clamp(FVector::Dist(pos, target), 0.f, maxSpeed));
 }
 
+void AAutoAgent::setOctant(OctantBase* _octant){ octantRef = _octant; }
+
 // Called every frame
 
 // Current setup can do everything here, or have every setting modified by a manager class
