@@ -8,3 +8,12 @@
 #ifndef AISAFARI_AISafariGameMode_generated_h
 	#include "AISafariGameMode.h"
 #endif
+#ifndef AISAFARI_AutoAgent_generated_h
+	#include "BaseClasses/AutoAgent.h"
+#endif
+#ifndef AISAFARI_FlockerBase_generated_h
+	#include "BaseClasses/FlockerBase.h"
+#endif
+#ifndef AISAFARI_FlockerManagerBase_generated_h
+	#include "BaseClasses/FlockerManagerBase.h"
+#endif

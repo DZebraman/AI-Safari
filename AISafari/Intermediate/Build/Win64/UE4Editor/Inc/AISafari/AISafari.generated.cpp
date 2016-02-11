@@ -13,12 +13,32 @@ void EmptyLinkFunctionForGeneratedCodeAISafari() {}
 	{
 	}
 	IMPLEMENT_CLASS(AAISafariGameMode, 3611705738);
+	void AAutoAgent::StaticRegisterNativesAAutoAgent()
+	{
+	}
+	IMPLEMENT_CLASS(AAutoAgent, 1100564679);
+	void AFlockerBase::StaticRegisterNativesAFlockerBase()
+	{
+	}
+	IMPLEMENT_CLASS(AFlockerBase, 4066395474);
+	void AFlockerManagerBase::StaticRegisterNativesAFlockerManagerBase()
+	{
+	}
+	IMPLEMENT_CLASS(AFlockerManagerBase, 1273385535);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
 
 	AISAFARI_API class UClass* Z_Construct_UClass_AAISafariGameMode_NoRegister();
 	AISAFARI_API class UClass* Z_Construct_UClass_AAISafariGameMode();
+	AISAFARI_API class UClass* Z_Construct_UClass_AAutoAgent_NoRegister();
+	AISAFARI_API class UClass* Z_Construct_UClass_AAutoAgent();
+	AISAFARI_API class UClass* Z_Construct_UClass_AFlockerBase_NoRegister();
+	AISAFARI_API class UClass* Z_Construct_UClass_AFlockerBase();
+	AISAFARI_API class UClass* Z_Construct_UClass_AFlockerManagerBase_NoRegister();
+	AISAFARI_API class UClass* Z_Construct_UClass_AFlockerManagerBase();
 	AISAFARI_API class UPackage* Z_Construct_UPackage_AISafari();
 	UClass* Z_Construct_UClass_AAISafariGameMode_NoRegister()
 	{
@@ -54,6 +74,134 @@ void EmptyLinkFunctionForGeneratedCodeAISafari() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AAISafariGameMode(Z_Construct_UClass_AAISafariGameMode, TEXT("AAISafariGameMode"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAISafariGameMode);
+	UClass* Z_Construct_UClass_AAutoAgent_NoRegister()
+	{
+		return AAutoAgent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AAutoAgent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_AISafari();
+			OuterClass = AAutoAgent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_maxSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("maxSpeed"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(maxSpeed, AAutoAgent), 0x0000000000000001);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BaseClasses/AutoAgent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BaseClasses/AutoAgent.h"));
+				MetaData->SetValue(NewProp_maxSpeed, TEXT("Category"), TEXT("init var"));
+				MetaData->SetValue(NewProp_maxSpeed, TEXT("ModuleRelativePath"), TEXT("BaseClasses/AutoAgent.h"));
+				MetaData->SetValue(NewProp_maxSpeed, TEXT("ToolTip"), TEXT("UPROPERY(EditAnywhere, Category = \"init vars\");"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AAutoAgent(Z_Construct_UClass_AAutoAgent, TEXT("AAutoAgent"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AAutoAgent);
+	UClass* Z_Construct_UClass_AFlockerBase_NoRegister()
+	{
+		return AFlockerBase::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AFlockerBase()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AAutoAgent();
+			Z_Construct_UPackage_AISafari();
+			OuterClass = AFlockerBase::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_distThreshold = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("distThreshold"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(distThreshold, AFlockerBase), 0x0000000000000001);
+				UProperty* NewProp_alignment = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("alignment"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(alignment, AFlockerBase), 0x0000000000000001);
+				UProperty* NewProp_cohesion = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cohesion"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(cohesion, AFlockerBase), 0x0000000000000001);
+				UProperty* NewProp_separation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("separation"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(separation, AFlockerBase), 0x0000000000000001);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BaseClasses/FlockerBase.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerBase.h"));
+				MetaData->SetValue(NewProp_distThreshold, TEXT("Category"), TEXT("flocking vars"));
+				MetaData->SetValue(NewProp_distThreshold, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerBase.h"));
+				MetaData->SetValue(NewProp_alignment, TEXT("Category"), TEXT("flocking vars"));
+				MetaData->SetValue(NewProp_alignment, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerBase.h"));
+				MetaData->SetValue(NewProp_cohesion, TEXT("Category"), TEXT("flocking vars"));
+				MetaData->SetValue(NewProp_cohesion, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerBase.h"));
+				MetaData->SetValue(NewProp_separation, TEXT("Category"), TEXT("flocking vars"));
+				MetaData->SetValue(NewProp_separation, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerBase.h"));
+				MetaData->SetValue(NewProp_separation, TEXT("ToolTip"), TEXT("Front facing vars"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AFlockerBase(Z_Construct_UClass_AFlockerBase, TEXT("AFlockerBase"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AFlockerBase);
+	UClass* Z_Construct_UClass_AFlockerManagerBase_NoRegister()
+	{
+		return AFlockerManagerBase::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AFlockerManagerBase()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_AISafari();
+			OuterClass = AFlockerManagerBase::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_numAgents = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("numAgents"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(numAgents, AFlockerManagerBase), 0x0000000000000001);
+				UProperty* NewProp_spawnRandomDist = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("spawnRandomDist"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(spawnRandomDist, AFlockerManagerBase), 0x0000000000000001);
+				UProperty* NewProp_location = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("location"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(location, AFlockerManagerBase), 0x0000000000000001, Z_Construct_UScriptStruct_FVector());
+				UProperty* NewProp_spawnObject = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("spawnObject"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(spawnObject, AFlockerManagerBase), 0x0004000000000001, Z_Construct_UClass_AFlockerBase_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BaseClasses/FlockerManagerBase.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerManagerBase.h"));
+				MetaData->SetValue(NewProp_numAgents, TEXT("Category"), TEXT("init vars"));
+				MetaData->SetValue(NewProp_numAgents, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerManagerBase.h"));
+				MetaData->SetValue(NewProp_spawnRandomDist, TEXT("Category"), TEXT("init vars"));
+				MetaData->SetValue(NewProp_spawnRandomDist, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerManagerBase.h"));
+				MetaData->SetValue(NewProp_location, TEXT("Category"), TEXT("init vars"));
+				MetaData->SetValue(NewProp_location, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerManagerBase.h"));
+				MetaData->SetValue(NewProp_spawnObject, TEXT("Category"), TEXT("init vars"));
+				MetaData->SetValue(NewProp_spawnObject, TEXT("ModuleRelativePath"), TEXT("BaseClasses/FlockerManagerBase.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AFlockerManagerBase(Z_Construct_UClass_AFlockerManagerBase, TEXT("AFlockerManagerBase"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AFlockerManagerBase);
 	UPackage* Z_Construct_UPackage_AISafari()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -62,8 +210,8 @@ void EmptyLinkFunctionForGeneratedCodeAISafari() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/AISafari")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x0EF59654;
-			Guid.B = 0x02035511;
+			Guid.A = 0xDBCE3C78;
+			Guid.B = 0xAF819E7C;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
