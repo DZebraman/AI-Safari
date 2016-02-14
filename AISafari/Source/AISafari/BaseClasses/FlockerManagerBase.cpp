@@ -22,12 +22,16 @@ void AFlockerManagerBase::BeginPlay()
 		flockers[i] = (AFlockerBase*)GetWorld()->SpawnActor(spawnObject, &tempLocation);
 	}
 	storage->setArray(1,numAgents,(AActor**)flockers);
+
+	octTreeHead = new OctTreeBase(1,GetWorld());
 }
 
 // Called every frame
 void AFlockerManagerBase::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
-
+	octTreeHead->findMinMax();
+	octTreeHead->subdivide();
+	octTreeHead->draw();
 }
 

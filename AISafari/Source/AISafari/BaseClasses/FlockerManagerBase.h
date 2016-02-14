@@ -5,7 +5,9 @@
 #include "FlockerBase.h"
 #include "ActorReferenceStruct.h"
 #include "GameFramework/Actor.h"
+#include "OctTreeBase.h"
 #include "FlockerManagerBase.generated.h"
+
 UCLASS()
 class AISAFARI_API AFlockerManagerBase : public AActor
 {
@@ -16,6 +18,8 @@ public:
 	AFlockerManagerBase();
 
 	GlobalStorage* storage;
+
+	OctTreeBase* octTreeHead;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

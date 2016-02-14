@@ -3,15 +3,29 @@
 #pragma once
 
 #include "AutoAgent.h"
+#include "OctantBase.h"
+#include "ActorReferenceStruct.h"
+#include <vector>
 /**
  * 
  */
 
 class AISAFARI_API OctTreeBase
 {
-private:
-	OctantBase** octants;
+protected:
+	OctantBase* headActor;
+
+	GlobalStorage * storage;
+	AActor** actors;
+	std::vector<AActor*> actorsV;
+	int numActors;
+	UWorld* world;
+	FVector min, max, centroid, halfwidth;
+
 public:
-	OctTreeBase();
+	OctTreeBase(int key, UWorld* _world);
+	void subdivide();
+	void draw();
+	void findMinMax();
 	~OctTreeBase();
 };

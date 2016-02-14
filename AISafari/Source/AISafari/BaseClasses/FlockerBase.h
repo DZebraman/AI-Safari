@@ -14,7 +14,7 @@ class AISAFARI_API AFlockerBase : public AAutoAgent
 protected:
 	bool bHasManager;
 	AFlockerBase ** flockers;
-	std::vector<AFlockerBase*> localFlockers;
+	std::vector<AActor*> localFlockers;
 	std::vector<int> localFlockerID;
 	char * ACTORTYPE = "baseFlockers";
 	int numFlockers;

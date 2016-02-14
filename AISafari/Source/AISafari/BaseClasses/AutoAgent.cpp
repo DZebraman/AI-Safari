@@ -34,7 +34,7 @@ FVector AAutoAgent::flee(FVector target){
 	dv.ClampMaxSize(maxSpeed);
 	dv = dv - vel;
 
-	DrawDebugLine(GetWorld(), pos, pos + dv.ClampMaxSize(maxSpeed), FColor::Magenta, false, -1.f, (uint8)'\000', 1.f);
+	//DrawDebugLine(GetWorld(), pos, pos + dv.ClampMaxSize(maxSpeed), FColor::Magenta, false, -1.f, (uint8)'\000', 1.f);
 
 	return -dv.ClampMaxSize(maxSpeed);
 }
@@ -59,7 +59,9 @@ FVector AAutoAgent::arrive(FVector target){
 	return vel.ClampMaxSize(FMath::Clamp(FVector::Dist(pos, target), 0.f, maxSpeed));
 }
 
-void AAutoAgent::setOctant(OctantBase* _octant){ octantRef = _octant; }
+void AAutoAgent::setOctant(OctantBase* _octant){ 
+	octantRef = _octant;
+}
 
 // Called every frame
 

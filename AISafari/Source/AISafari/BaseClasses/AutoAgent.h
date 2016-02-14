@@ -17,6 +17,7 @@ class AISAFARI_API AAutoAgent : public AActor
 	
 protected:
 	FVector pos, vel, acc, fwd;
+	OctantBase* octantRef;
 
 public:	
 	// Sets default values for this actor's properties
@@ -28,8 +29,7 @@ public:
 	UPROPERTY(EditAnywhere, Category = "init var")
 		float maxSpeed;
 
-	OctantBase* octantRef;
-
+	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	

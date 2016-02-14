@@ -1,0 +1,200 @@
+﻿[2016.02.13-18.21.11:067][  0]Log file open, 02/13/16 13:21:11
+[2016.02.13-18.21.11:067][  0]LogInit:Display: Running engine for game: AISafari
+[2016.02.13-18.21.11:067][  0]LogInit:Display: RandInit(1723275299) SRandInit(1723275299).
+[2016.02.13-18.21.11:067][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.02.13-18.21.11:067][  0]LogStats: Stats thread started at 0.071256
+[2016.02.13-18.21.11:067][  0]LogInit: Version: 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2016.02.13-18.21.11:067][  0]LogInit: API Version: 2672455
+[2016.02.13-18.21.11:067][  0]LogInit: Compiled (64-bit): Sep 28 2015 10:25:44
+[2016.02.13-18.21.11:067][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2016.02.13-18.21.11:067][  0]LogInit: Build Configuration: Development
+[2016.02.13-18.21.11:067][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2016.02.13-18.21.11:067][  0]LogInit: Command line:  
+[2016.02.13-18.21.11:067][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.9/Engine/Binaries/Win64/
+[2016.02.13-18.21.11:067][  0]LogInit: Rocket: 1
+[2016.02.13-18.21.11:074][  0]LogInit: Using libcurl 7.41.0
+[2016.02.13-18.21.11:074][  0]LogInit:  - built for x86_64-pc-win32
+[2016.02.13-18.21.11:074][  0]LogInit:  - supports SSL with WinSSL
+[2016.02.13-18.21.11:074][  0]LogInit:  - other features:
+[2016.02.13-18.21.11:074][  0]LogInit:      CURL_VERSION_SSL
+[2016.02.13-18.21.11:074][  0]LogInit:      CURL_VERSION_IPV6
+[2016.02.13-18.21.11:074][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.02.13-18.21.11:074][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.02.13-18.21.11:074][  0]LogInit:      CURL_VERSION_IDN
+[2016.02.13-18.21.11:074][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.02.13-18.21.11:074][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.02.13-18.21.11:074][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.02.13-18.21.11:074][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.02.13-18.21.11:074][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.02.13-18.21.11:079][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.02.13-18.21.11:085][  0]LogInit: Object subsystem initialized
+[2016.02.13-18.21.11:086][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.13-18.21.11:086][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.02.13-18.21.11:092][  0]LogInit: Computer: ZEBRADESKTOP
+[2016.02.13-18.21.11:092][  0]LogInit: User: Ryan
+[2016.02.13-18.21.11:092][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.02.13-18.21.11:092][  0]LogInit: High frequency timer resolution =3.984648 MHz
+[2016.02.13-18.21.11:092][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.02.13-18.21.11:092][  0]LogMemory: Platform Memory Stats for Windows
+[2016.02.13-18.21.11:092][  0]LogMemory: Process Physical Memory: 53.91 MB used, 53.91 MB peak
+[2016.02.13-18.21.11:092][  0]LogMemory: Process Virtual Memory: 55.42 MB used, 55.42 MB peak
+[2016.02.13-18.21.11:092][  0]LogMemory: Physical Memory: 10162.06 MB used, 16325.73 MB total
+[2016.02.13-18.21.11:092][  0]LogMemory: Virtual Memory: 364.76 MB used, 134217728.00 MB total
+[2016.02.13-18.21.11:120][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.02.13-18.21.11:736][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 780 (Feature Level 11_0)
+[2016.02.13-18.21.11:736][  0]LogD3D11RHI: Adapter has 5971MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 3 output[s]
+[2016.02.13-18.21.11:737][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.02.13-18.21.11:737][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 0 output[s]
+[2016.02.13-18.21.11:737][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.02.13-18.21.14:565][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.13-18.21.14:566][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.13-18.21.14:568][  0]LogD3D11RHI: !Direct3DDevice
+[2016.02.13-18.21.14:568][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.02.13-18.21.14:581][  0]LogD3D11RHI: Async texture creation enabled
+[2016.02.13-18.21.14:601][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (Q:/Classes/3-2/AI/AISafari/Intermediate/Shaders/WorkingDirectory/5712/).
+[2016.02.13-18.21.14:601][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'Q:/Classes/3-2/AI/AISafari/Intermediate/Shaders/tmp/A872406D493295F6B24817BAE66CCB46/'.
+[2016.02.13-18.21.14:601][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.02.13-18.21.15:334][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.02.13-18.21.15:339][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.02.13-18.21.15:343][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.02.13-18.21.15:347][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.02.13-18.21.15:353][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.02.13-18.21.15:355][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.02.13-18.21.15:357][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.02.13-18.21.15:360][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.02.13-18.21.15:362][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.02.13-18.21.15:364][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.02.13-18.21.15:367][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.02.13-18.21.15:370][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.02.13-18.21.15:370][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.02.13-18.21.15:386][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.02.13-18.21.15:388][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.02.13-18.21.15:390][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.02.13-18.21.15:393][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.02.13-18.21.15:393][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.02.13-18.21.15:468][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.02.13-18.21.15:504][  0]LogDerivedDataCache: Loaded boot cache 0.04s 41MB C:/Users/Ryan/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2016.02.13-18.21.15:504][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ryan/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
+[2016.02.13-18.21.15:504][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file Q:/Classes/3-2/AI/AISafari/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.02.13-18.21.15:504][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.02.13-18.21.15:504][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file Q:/Classes/3-2/AI/AISafari/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.02.13-18.21.15:504][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.02.13-18.21.15:608][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.02.13-18.21.15:620][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ryan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.02.13-18.21.15:821][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.13-18.21.15:822][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.02.13-18.21.15:909][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.02.13-18.21.15:909][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.02.13-18.21.16:090][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.02.13-18.21.16:597][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.02.13-18.21.16:697][  0]LogAssetRegistry: FAssetRegistry took 0.0113 seconds to start up
+[2016.02.13-18.21.16:830][  0]SourceControl: Info Source control is disabled
+[2016.02.13-18.21.16:839][  0]SourceControl: Info Source control is disabled
+[2016.02.13-18.21.16:847][  0]SourceControl: Info Source control is disabled
+[2016.02.13-18.21.16:855][  0]SourceControl: Info Source control is disabled
+[2016.02.13-18.21.16:958][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.02.13-18.21.17:018][  0]LogObj: 28380 objects as part of root set at end of initial load.
+[2016.02.13-18.21.17:018][  0]LogUObjectAllocator: 6046576 out of 0 bytes used by permanent object pool.
+[2016.02.13-18.21.17:061][  0]LogEngine: Initializing Engine...
+[2016.02.13-18.21.17:063][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
+[2016.02.13-18.21.17:064][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.02.13-18.21.17:151][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.02.13-18.21.17:157][  0]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.13-18.21.17:161][  0]LogInit: FAudioDevice initialized.
+[2016.02.13-18.21.17:181][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Ryan/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2016.02.13-18.21.17:185][  0]LogInit: Texture streaming: Enabled
+[2016.02.13-18.21.17:190][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.02.13-18.21.17:190][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2016.02.13-18.21.17:190][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId d1f9beca401d8fe412e57fa88e66abb9|85745c8591404a23957796735eaccf05|defee072-9da8-4f68-a06a-f65b3a6c30bf
+[2016.02.13-18.21.17:190][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.02.13-18.21.17:220][  0]LogInit: Transaction tracking system initialized
+[2016.02.13-18.21.17:244][  0]BlueprintLog: New page: Editor Load
+[2016.02.13-18.21.17:319][  0]LocalizationService: Info Localization service is disabled
+[2016.02.13-18.21.17:389][  0]LogConsoleResponse:Display: 
+[2016.02.13-18.21.17:478][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.02.13-18.21.17:525][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Content/' took 0.01s
+[2016.02.13-18.21.17:525][  0]SourceControl: Info Source control is disabled
+[2016.02.13-18.21.17:525][  0]Cmd: MAP LOAD FILE="Q:/Classes/3-2/AI/AISafari/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.02.13-18.21.17:526][  0]LightingResults: New page: Lighting Build
+[2016.02.13-18.21.17:528][  0]MapCheck: New page: Map Check
+[2016.02.13-18.21.17:528][  0]LightingResults: New page: Lighting Build
+[2016.02.13-18.21.17:539][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000001C5C137CE0
+[2016.02.13-18.21.17:761][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.13-18.21.17:768][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.02.13-18.21.17:768][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.02.13-18.21.17:803][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 34.626ms to complete.
+[2016.02.13-18.21.17:803][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.278
+[2016.02.13-18.21.17:847][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.13-18.21.17:985][  0]LogCollectionManager: Loaded 0 collections in 0.002806 seconds
+[2016.02.13-18.21.18:024][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Saved/Collections/' took 0.01s
+[2016.02.13-18.21.18:024][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Content/Developers/Ryan/Collections/' took 0.01s
+[2016.02.13-18.21.18:024][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Content/Collections/' took 0.01s
+[2016.02.13-18.21.18:024][  0]LogContentBrowser: Native class hierarchy populated in 0.0061 seconds. Added 1871 classes and 336 folders.
+[2016.02.13-18.21.18:043][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.02.13-18.21.18:050][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2016.02.13-18.21.18:086][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2016.02.13-18.21.18:092][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2016.02.13-18.21.18:112][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.02.13-18.21.18:120][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.02.13-18.21.18:144][  0]LogLoad: Full Startup: 7.73 seconds (BP compile: 0.04 seconds)
+[2016.02.13-18.21.18:527][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.02.13-18.21.18:628][  0]LogRenderer: Reallocating scene render targets to support 1208x600 (Frame:2).
+[2016.02.13-18.21.19:161][  2]LogAssetRegistry: Asset discovery search completed in 2.4749 seconds
+[2016.02.13-18.21.19:161][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.02.13-18.21.19:161][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000016 seconds (updated 0 objects)
+[2016.02.13-18.21.38:577][411]Recompiling AISafari...
+[2016.02.13-18.21.38:578][411]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.9/Engine/Binaries/DotNET/UnrealBuildTool.exe AISafari -ModuleWithSuffix AISafari 4035 Win64 Development -editorrecompile -canskiplink "Q:/Classes/3-2/AI/AISafari/AISafari.uproject" -rocket  -rocket]
+[2016.02.13-18.21.38:579][411]Warning: Starting HotReload took  0.0s.
+[2016.02.13-18.21.59:971][932]CompilerResultsLog: New page: Compilation - Feb 13, 2016, 8:21:59 AM
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info Creating makefile for hot reloading AISafari (modules to compile have changed)
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info Parsing headers for AISafariEditor
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info   Running UnrealHeaderTool "Q:/Classes/3-2/AI/AISafari/AISafari.uproject" "Q:\Classes\3-2\AI\AISafari\Intermediate\Build\Win64\AISafariEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -rocket -installed
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info Reflection code generated for AISafariEditor in 6.9284584 seconds
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info Performing 2 actions (4 in parallel)
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info FlockerBase.cpp
+[2016.02.13-18.21.59:972][932]CompilerResultsLog:Error: Error Q:\Classes\3-2\AI\AISafari\Source\AISafari\BaseClasses\FlockerBase.cpp(135)  : warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info         c:\program files (x86)\epic games\4.9\engine\source\runtime\core\public\math\Vector.h(519) : see declaration of 'FVector::ClampMaxSize'
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info [2/2] Link UE4Editor-AISafari-4035.dll
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info    Creating library Q:\Classes\3-2\AI\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-4035.lib and object Q:\Classes\3-2\AI\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-4035.exp
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.02.13-18.21.59:972][932]CompilerResultsLog: Info Total build time: 21.36 seconds
+[2016.02.13-18.21.59:972][932]LogMainFrame: MainFrame: Module compiling took 21.410 seconds
+[2016.02.13-18.22.00:011][932]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.13-18.22.00:012][932]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.13-18.22.00:063][932]LogContentBrowser: Native class hierarchy populated in 0.0060 seconds. Added 1872 classes and 338 folders.
+[2016.02.13-18.22.03:066][247]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.13-18.22.03:066][247]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.13-18.22.03:066][247]PIE: New page: PIE session: Minimal_Default (Feb 13, 2016, 8:22:03 AM)
+[2016.02.13-18.22.03:066][247]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.13-18.22.03:072][247]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006185s)
+[2016.02.13-18.22.03:073][247]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.13-18.22.03:073][247]LogPlayLevel: PIE: World Init took: (0.000615s)
+[2016.02.13-18.22.03:073][247]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006955s)
+[2016.02.13-18.22.03:088][247]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.13-18.22.03:091][247]LogInit: FAudioDevice initialized.
+[2016.02.13-18.22.03:136][247]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.13-18.22.03:138][247]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.13-13.22.03
+[2016.02.13-18.22.03:138][247]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.13-18.22.03:138][247]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.13-18.22.03:138][247]LogWorld: Bringing up level for play took: 0.001854
+[2016.02.13-18.22.03:246][247]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.074
+[2016.02.13-18.22.03:246][247]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.13-18.22.03:565][247]LogCrashTracker: 
+
+
+[2016.02.13-18.22.03:566][247]LogCrashTracker: 
+
+
+[2016.02.13-18.22.03:566][247]LogWindows: === Critical error: ===
+Fatal error!
+
+
+
+[2016.02.13-18.22.03:652][247]LogExit: Executing StaticShutdownAfterError
+[2016.02.13-18.22.03:658][247]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.02.13-18.22.03:658][247]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.02.13-18.22.03:658][247]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.02.13-18.22.03:658][247]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.02.13-18.22.03:658][247]LogWindows: FPlatformMisc::RequestExit(1)
+[2016.02.13-18.22.03:658][247]Log file closed, 02/13/16 13:22:03

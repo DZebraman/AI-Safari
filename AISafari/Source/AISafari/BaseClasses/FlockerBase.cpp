@@ -46,7 +46,7 @@ void AFlockerBase::calcForces(){
 
 	if (sepV != FVector::ZeroVector)
 		acc += flee(sepV) * separation;
-	//fwd = FMath::Lerp(fwd, align(), 0.1);
+	fwd = FMath::Lerp(fwd, align(), 0.1);
 }
 
 // Averages the forward vector of all local flockers
@@ -62,9 +62,18 @@ FVector AFlockerBase::align(){
 FVector AFlockerBase::calcCentroid(){
 	FVector _centroid = FVector::ZeroVector;
 
+	float closest = 1000 * 1000;
+	sepV = FVector::ZeroVector;
+
 	for (int i = 0; i < localFlockers.size(); i++){
 		FVector tempVec = localFlockers[i]->GetActorLocation();
 		_centroid += tempVec;
+		float dist = FVector::DistSquared(pos,tempVec);
+		if (dist < closest){
+			sepV = localFlockers[i]->GetActorLocation();
+			closest = dist;
+		}
+
 	}
 
 	if (_centroid != FVector::ZeroVector)
@@ -78,17 +87,12 @@ void AFlockerBase::findLocal(){
 	//localFlockers.clear();
 	//localFlockerID.clear();
 
-	float closest = 1000*1000;
-	sepV = FVector::ZeroVector;
+	
 
 	for (int i = 0; i < numFlockers; i++){
 		if (FVector::DistSquared(pos, flockers[i]->GetActorLocation()) < distThreshold){
 
-			float dist = FVector::DistSquared(pos, flockers[i]->GetActorLocation());
-			if (dist < closest){
-				sepV = flockers[i]->GetActorLocation();
-				closest = dist;
-			}
+			
 			bool breakLoop = false;
 			//is this data inside localFlocker?
 			for (int k = 0; k < localFlockerID.size(); k++){
@@ -107,7 +111,8 @@ void AFlockerBase::cullLocal(){
 			localFlockers.erase(localFlockers.begin() + i);
 			localFlockerID.erase(localFlockerID.begin() + i);
 			continue;
-		} else if (localFlockers[i]->getPos() == pos){
+		}
+		else if (localFlockers[i]->GetActorLocation() == pos){
 			localFlockers.erase(localFlockers.begin() + i);
 			localFlockerID.erase(localFlockerID.begin() + i);
 		}
@@ -119,8 +124,13 @@ void AFlockerBase::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
 	if (!bHasManager){
-		findLocal();
-		cullLocal();
+		if (!octantRef){
+			findLocal();
+			cullLocal();
+		}
+		else{
+			localFlockers = *(octantRef->getActors());
+		}
 		centroid = calcCentroid();
 	}
 
@@ -137,7 +147,7 @@ void AFlockerBase::Tick( float DeltaTime )
 	//DrawDebugLine(GetWorld(), pos, centroid, FColor::Red,false,-1.f,(uint8)'\000',2.f);
 
 	for (int i = 0; i < localFlockers.size(); ++i){
-		DrawDebugLine(GetWorld(), pos, localFlockers[i]->getPos(), FColor::Black, false, -1.f, (uint8)'\000', 1.f);
+		DrawDebugLine(GetWorld(), pos, localFlockers[i]->GetActorLocation(), FColor::Black, false, -1.f, (uint8)'\000', 1.f);
 	}
 
 	SetActorLocation(pos);

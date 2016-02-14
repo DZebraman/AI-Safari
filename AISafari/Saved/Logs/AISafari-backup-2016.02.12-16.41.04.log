@@ -1,0 +1,95 @@
+﻿[2016.02.12-21.40.20:584][  0]Log file open, 02/12/16 16:40:20
+[2016.02.12-21.40.20:584][  0]LogInit:Display: Running engine for game: AISafari
+[2016.02.12-21.40.20:584][  0]LogInit:Display: RandInit(-1486311180) SRandInit(-1486311180).
+[2016.02.12-21.40.20:584][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.02.12-21.40.20:584][  0]LogStats: Stats thread started at 0.070049
+[2016.02.12-21.40.20:584][  0]LogInit: Version: 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2016.02.12-21.40.20:584][  0]LogInit: API Version: 2672455
+[2016.02.12-21.40.20:584][  0]LogInit: Compiled (64-bit): Sep 28 2015 10:25:44
+[2016.02.12-21.40.20:584][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2016.02.12-21.40.20:584][  0]LogInit: Build Configuration: Development
+[2016.02.12-21.40.20:584][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2016.02.12-21.40.20:584][  0]LogInit: Command line:  
+[2016.02.12-21.40.20:584][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.9/Engine/Binaries/Win64/
+[2016.02.12-21.40.20:584][  0]LogInit: Rocket: 1
+[2016.02.12-21.40.20:591][  0]LogInit: Using libcurl 7.41.0
+[2016.02.12-21.40.20:591][  0]LogInit:  - built for x86_64-pc-win32
+[2016.02.12-21.40.20:591][  0]LogInit:  - supports SSL with WinSSL
+[2016.02.12-21.40.20:591][  0]LogInit:  - other features:
+[2016.02.12-21.40.20:591][  0]LogInit:      CURL_VERSION_SSL
+[2016.02.12-21.40.20:591][  0]LogInit:      CURL_VERSION_IPV6
+[2016.02.12-21.40.20:591][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.02.12-21.40.20:591][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.02.12-21.40.20:591][  0]LogInit:      CURL_VERSION_IDN
+[2016.02.12-21.40.20:591][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.02.12-21.40.20:591][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.02.12-21.40.20:591][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.02.12-21.40.20:591][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.02.12-21.40.20:591][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.02.12-21.40.20:596][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.02.12-21.40.20:601][  0]LogInit: Object subsystem initialized
+[2016.02.12-21.40.20:602][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.12-21.40.20:602][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.02.12-21.40.20:608][  0]LogInit: Computer: ZEBRADESKTOP
+[2016.02.12-21.40.20:608][  0]LogInit: User: Ryan
+[2016.02.12-21.40.20:608][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.02.12-21.40.20:608][  0]LogInit: High frequency timer resolution =3.984652 MHz
+[2016.02.12-21.40.20:609][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.02.12-21.40.20:609][  0]LogMemory: Platform Memory Stats for Windows
+[2016.02.12-21.40.20:609][  0]LogMemory: Process Physical Memory: 54.02 MB used, 54.02 MB peak
+[2016.02.12-21.40.20:609][  0]LogMemory: Process Virtual Memory: 57.47 MB used, 57.47 MB peak
+[2016.02.12-21.40.20:609][  0]LogMemory: Physical Memory: 8347.44 MB used, 16325.73 MB total
+[2016.02.12-21.40.20:609][  0]LogMemory: Virtual Memory: 366.70 MB used, 134217728.00 MB total
+[2016.02.12-21.40.20:636][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.02.12-21.40.21:205][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 780 (Feature Level 11_0)
+[2016.02.12-21.40.21:205][  0]LogD3D11RHI: Adapter has 5971MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 3 output[s]
+[2016.02.12-21.40.21:206][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.02.12-21.40.21:206][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 0 output[s]
+[2016.02.12-21.40.21:206][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.02.12-21.40.21:214][  0]LogD3D11RHI: !Direct3DDevice
+[2016.02.12-21.40.21:214][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.02.12-21.40.21:228][  0]LogD3D11RHI: Async texture creation enabled
+[2016.02.12-21.40.21:240][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (Q:/Classes/3-2/AI/AISafari/Intermediate/Shaders/WorkingDirectory/78772/).
+[2016.02.12-21.40.21:240][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'Q:/Classes/3-2/AI/AISafari/Intermediate/Shaders/tmp/A3CA548B49896FB69406B797A68552BC/'.
+[2016.02.12-21.40.21:240][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.02.12-21.40.21:923][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.02.12-21.40.21:927][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.02.12-21.40.21:930][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.02.12-21.40.21:934][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.02.12-21.40.21:937][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.02.12-21.40.21:939][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.02.12-21.40.21:942][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.02.12-21.40.21:944][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.02.12-21.40.21:946][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.02.12-21.40.21:948][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.02.12-21.40.21:950][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.02.12-21.40.21:952][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.02.12-21.40.21:953][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.02.12-21.40.21:968][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.02.12-21.40.21:970][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.02.12-21.40.21:972][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.02.12-21.40.21:974][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.02.12-21.40.21:974][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.02.12-21.40.22:032][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.02.12-21.40.22:063][  0]LogDerivedDataCache: Loaded boot cache 0.03s 41MB C:/Users/Ryan/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2016.02.12-21.40.22:063][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ryan/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
+[2016.02.12-21.40.22:063][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file Q:/Classes/3-2/AI/AISafari/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.02.12-21.40.22:063][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.02.12-21.40.22:063][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file Q:/Classes/3-2/AI/AISafari/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.02.12-21.40.22:063][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.02.12-21.40.22:157][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.02.12-21.40.22:169][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ryan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.02.12-21.40.22:286][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.12-21.40.22:287][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.02.12-21.40.22:364][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.02.12-21.40.22:364][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.02.12-21.40.22:532][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.02.12-21.40.23:019][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.02.12-21.40.23:181][  0]LogWindows: === Critical error: ===
+Fatal error!
+
+
+
+[2016.02.12-21.40.23:261][  0]LogExit: Executing StaticShutdownAfterError
+[2016.02.12-21.40.23:263][  0]LogWindows: FPlatformMisc::RequestExit(1)
+[2016.02.12-21.40.23:263][  0]Log file closed, 02/12/16 16:40:23

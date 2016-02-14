@@ -1,16 +1,16 @@
-﻿Build started 2/11/2016 1:48:57 PM.
-     1>Project "D:\Users\jrp3024\AI-Safari\AISafari\Intermediate\ProjectFiles\AISafari.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2/14/2016 1:38:05 PM.
+     1>Project "Q:\Classes\3-2\AI\AISafari\Intermediate\ProjectFiles\AISafari.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files (x86)\Epic Games\4.9\Engine\Build\BatchFiles\Build.bat" AISafariEditor Win64 Development "D:\Users\jrp3024\AI-Safari\AISafari\AISafari.uproject" -rocket -waitmutex
+         "C:\Program Files (x86)\Epic Games\4.9\Engine\Build\BatchFiles\Build.bat" AISafariEditor Win64 Development "Q:\Classes\3-2\AI\AISafari\AISafari.uproject" -rocket -waitmutex
          Compiling game modules for hot reload
-         Performing 2 actions (2 in parallel)
+         Performing 2 actions (4 in parallel)
          OctTreeBase.cpp
-         [2/2] Link UE4Editor-AISafari-9020.dll
-            Creating library D:\Users\jrp3024\AI-Safari\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-9020.lib and object D:\Users\jrp3024\AI-Safari\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-9020.exp
+         [2/2] Link UE4Editor-AISafari-2560.dll
+            Creating library Q:\Classes\3-2\AI\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-2560.lib and object Q:\Classes\3-2\AI\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-2560.exp
          -------- End Detailed Actions Stats -----------------------------------------------------------
-         Total build time: 4.51 seconds
-     1>Done Building Project "D:\Users\jrp3024\AI-Safari\AISafari\Intermediate\ProjectFiles\AISafari.vcxproj" (Build target(s)).
+         Total build time: 2.91 seconds
+     1>Done Building Project "Q:\Classes\3-2\AI\AISafari\Intermediate\ProjectFiles\AISafari.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.59
+Time Elapsed 00:00:02.95
