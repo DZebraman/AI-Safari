@@ -48,8 +48,12 @@ public:
 	virtual void calcForces();
 	virtual FVector align();
 	virtual FVector calcCentroid();
+	virtual void findFlee();
 	virtual void findLocal();
 	virtual void cullLocal();
+
+	virtual void findLocalOct();
+	virtual void nearestNeighborRecurse(OctantBase* _thisOct);
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

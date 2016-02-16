@@ -7,7 +7,7 @@
 AAutoAgent::AAutoAgent()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	//PrimaryActorTick.bCanEverTick = true;
 	storage = storage->getInstance();
 }
 
@@ -24,7 +24,7 @@ FVector AAutoAgent::seek(FVector target){
 	dv.ClampMaxSize(maxSpeed);
 	dv = dv - vel;
 
-	//DrawDebugLine(GetWorld(), pos, pos + dv.ClampMaxSize(maxSpeed), FColor::Magenta, false, -1.f, (uint8)'\000', 1.f);
+	DrawDebugLine(GetWorld(), pos, pos + dv.ClampMaxSize(maxSpeed) * 3, FColor::Green, false, -1.f, (uint8)'\000', 1.f);
 
 	return dv.ClampMaxSize(maxSpeed);
 }
@@ -34,7 +34,7 @@ FVector AAutoAgent::flee(FVector target){
 	dv.ClampMaxSize(maxSpeed);
 	dv = dv - vel;
 
-	//DrawDebugLine(GetWorld(), pos, pos + dv.ClampMaxSize(maxSpeed), FColor::Magenta, false, -1.f, (uint8)'\000', 1.f);
+	DrawDebugLine(GetWorld(), pos, pos + dv.ClampMaxSize(maxSpeed), FColor::Magenta, false, -1.f, (uint8)'\000', 1.f);
 
 	return -dv.ClampMaxSize(maxSpeed);
 }

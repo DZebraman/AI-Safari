@@ -58,6 +58,7 @@ void OctTreeBase::findMinMax(){
 		if (dist < minDist) { minDist = dist; min = actors[i]->GetActorLocation(); }
 	}
 
+
 	//halfwidth = (max - min) / 2;
 	float dist = FVector::Dist(centroid, max);
 	float dist2 = FVector::Dist(centroid, min);

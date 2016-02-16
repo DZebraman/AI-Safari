@@ -12,9 +12,13 @@ OctantBase::OctantBase(FVector _center, FVector _halfwidth, std::vector<AActor*>
 
 	world = _world;
 
+	if (halfwidth.Size() * 2 > 400)
+		maxRecursions += ((halfwidth.Size() * 2) - 400) / 100 ;
+
+
 	currentRecursion = recursionDepth;
 
-	if (localActors.size() > lowerActorLimit) 
+	if (localActors.size() > lowerActorLimit && currentRecursion < maxRecursions)
 		subdivide();
 }
 
@@ -24,15 +28,12 @@ void OctantBase::setActors(std::vector<AActor*>& newActors){
 			localActors.push_back(newActors[i]);
 
 			((AAutoAgent*)newActors[i])->setOctant(this);
-
-			/*newActors[i] = newActors.back();
-			newActors.pop_back();*/
 		}
 	}
 }
 
 void OctantBase::draw(){
-	if (hasChildren){
+	if (bHasChildren){
 		for (int i = 0; i < 8; i++){
 			children[i]->draw();
 		}
@@ -41,7 +42,7 @@ void OctantBase::draw(){
 }
 
 void OctantBase::killChildren(){
-	if (hasChildren){
+	if (bHasChildren){
 		for (int i = 0; i < 8; i++){
 			children[i]->killChildren();
 			delete children[i];
@@ -50,43 +51,45 @@ void OctantBase::killChildren(){
 }
 
 void OctantBase::subdivide(){
-	if (currentRecursion < maxRecursions){
-		children = new OctantBase*[8];
-		hasChildren = true;
-		children[0] = new OctantBase(center - halfwidth / 2, halfwidth / 2, localActors, currentRecursion + 1, world);
-		children[0]->setHead(this);
+	children = new OctantBase*[8];
+	bHasChildren = true;
+	children[0] = new OctantBase(center - halfwidth / 2, halfwidth / 2, localActors, currentRecursion + 1, world);
+	children[0]->setHead(this);
 
-		FVector octCenter;
-		octCenter.X = center.X - halfwidth.X / 2; octCenter.Y = center.Y - halfwidth.Y / 2; octCenter.Z = center.Z + halfwidth.Z / 2;
-		children[1] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1,world);
-		children[1]->setHead(this);
+	FVector octCenter;
+	octCenter.X = center.X - halfwidth.X / 2; octCenter.Y = center.Y - halfwidth.Y / 2; octCenter.Z = center.Z + halfwidth.Z / 2;
+	children[1] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1,world);
+	children[1]->setHead(this);
 
-		octCenter.X = center.X + halfwidth.X / 2; octCenter.Y = center.Y - halfwidth.Y / 2; octCenter.Z = center.Z - halfwidth.Z / 2;
-		children[2] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
-		children[2]->setHead(this);
+	octCenter.X = center.X + halfwidth.X / 2; octCenter.Y = center.Y - halfwidth.Y / 2; octCenter.Z = center.Z - halfwidth.Z / 2;
+	children[2] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
+	children[2]->setHead(this);
 
-		octCenter.X = center.X + halfwidth.X / 2; octCenter.Y = center.Y - halfwidth.Y / 2; octCenter.Z = center.Z + halfwidth.Z / 2;
-		children[3] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
-		children[3]->setHead(this);
+	octCenter.X = center.X + halfwidth.X / 2; octCenter.Y = center.Y - halfwidth.Y / 2; octCenter.Z = center.Z + halfwidth.Z / 2;
+	children[3] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
+	children[3]->setHead(this);
 
-		octCenter.X = center.X - halfwidth.X / 2; octCenter.Y = center.Y + halfwidth.Y / 2; octCenter.Z = center.Z - halfwidth.Z / 2;
-		children[4] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
-		children[4]->setHead(this);
+	octCenter.X = center.X - halfwidth.X / 2; octCenter.Y = center.Y + halfwidth.Y / 2; octCenter.Z = center.Z - halfwidth.Z / 2;
+	children[4] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
+	children[4]->setHead(this);
 
-		octCenter.X = center.X + halfwidth.X / 2; octCenter.Y = center.Y + halfwidth.Y / 2; octCenter.Z = center.Z - halfwidth.Z / 2;
-		children[5] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
-		children[5]->setHead(this);
+	octCenter.X = center.X + halfwidth.X / 2; octCenter.Y = center.Y + halfwidth.Y / 2; octCenter.Z = center.Z - halfwidth.Z / 2;
+	children[5] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
+	children[5]->setHead(this);
 
-		octCenter.X = center.X + halfwidth.X / 2; octCenter.Y = center.Y + halfwidth.Y / 2; octCenter.Z = center.Z + halfwidth.Z / 2;
-		children[6] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
-		children[6]->setHead(this);
+	octCenter.X = center.X - halfwidth.X / 2; octCenter.Y = center.Y + halfwidth.Y / 2; octCenter.Z = center.Z + halfwidth.Z / 2;
+	children[6] = new OctantBase(octCenter, halfwidth / 2, localActors, currentRecursion + 1, world);
+	children[6]->setHead(this);
 
-		children[7] = new OctantBase(center + halfwidth / 2, halfwidth / 2, localActors, currentRecursion + 1, world);
-		children[7]->setHead(this);
-	}
+	children[7] = new OctantBase(center + halfwidth / 2, halfwidth / 2, localActors, currentRecursion + 1, world);
+	children[7]->setHead(this);
 }
 
 std::vector<AActor*>* OctantBase::getActors(){
+	if (!&localActors){
+		std::vector<AActor*>* butts = new std::vector<AActor*>;
+		return butts;
+	}
 	return &localActors;
 }
 
@@ -116,11 +119,13 @@ void OctantBase::clearChildren(){
 	}
 }
 
-void OctantBase::setHead(OctantBase* _head){head = _head;}
-OctantBase* OctantBase::getHead(){ 
-	if(head)return head; 
-	else return this;
-}
+void OctantBase::setHead(OctantBase* _head){ head = _head; bHasHead = true; }
+OctantBase* OctantBase::getHead(){ return head; }
+bool OctantBase::hasHead(){return bHasHead;}
+FVector OctantBase::getCenter(){ return center; }
+FVector OctantBase::getRadius(){ return halfwidth; }
+bool OctantBase::hasChildren(){ return bHasChildren; }
+OctantBase*** OctantBase::getChildren(){ return &children; }
 
 OctantBase::~OctantBase()
 {

@@ -22,17 +22,25 @@ protected:
 	int maxRecursions = 5;
 	int currentRecursion;
 
-	int lowerActorLimit = 5;
+	int lowerActorLimit = 40;
 	UWorld* world;
-	bool hasChildren = false;
+	bool bHasChildren = false;
+	
 
 public:
+	bool bHasHead = false;
+
 	virtual void clearChildren();
 	virtual void subdivide();
 	virtual void setActors(std::vector<AActor*>& newActors);
 	virtual void draw();
 	virtual void setHead(OctantBase* _head);
 	virtual void killChildren();
+	virtual FVector getCenter();
+	virtual FVector getRadius();
+	virtual bool hasChildren();
+	virtual bool hasHead();
+	virtual OctantBase*** getChildren();
 	virtual OctantBase* getHead();
 	virtual std::vector<AActor*>* getActors();
 	OctantBase(FVector _center, FVector _halfwidth, std::vector<AActor*>& newActors, int recursionDepth, UWorld* _world);
