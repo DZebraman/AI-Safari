@@ -5,6 +5,9 @@
 #include "FlockerManagerBase.h"
 #include <map>
 
+// For profiler
+DECLARE_CYCLE_STAT(TEXT("Flocker - FindNearestRecurse"), STAT_FindNearestRecurse, STATGROUP_Flocker)
+
 // Sets default values
 AFlockerBase::AFlockerBase()
 {
@@ -46,7 +49,7 @@ void AFlockerBase::calcForces(){
 
 	if (sepV != FVector::ZeroVector)
 		acc += flee(sepV) * separation;
-	fwd = FMath::Lerp(fwd, align(), 0.1);
+	//fwd = FMath::Lerp(fwd, align(), 0.1);
 }
 
 // Averages the forward vector of all local flockers
@@ -59,7 +62,7 @@ FVector AFlockerBase::align(){
 }
 
 void AFlockerBase::findFlee(){
-	float closest = 1000 * 1000;
+	float closest = 100000;
 	sepV = FVector::ZeroVector;
 
 	std::vector<AActor*> tempFlock = *octantRef->getActors();
@@ -78,13 +81,9 @@ void AFlockerBase::findFlee(){
 FVector AFlockerBase::calcCentroid(){
 	FVector _centroid = FVector::ZeroVector;
 
-	
-
 	for (int i = 0; i < localFlockers.size(); i++){
 		FVector tempVec = localFlockers[i]->GetActorLocation();
 		_centroid += tempVec;
-		
-
 	}
 
 	if (_centroid != FVector::ZeroVector)
@@ -94,6 +93,12 @@ FVector AFlockerBase::calcCentroid(){
 }
 
 void AFlockerBase::findLocalOct(){
+
+	// Profiling
+	SCOPE_CYCLE_COUNTER(STAT_FindNearestRecurse);
+
+	centroid = FVector::ZeroVector;
+
 	OctantBase* thisOct = octantRef;
 	int upRecurse = 0;
 	while (thisOct->hasHead() && upRecurse++ < 3){
@@ -107,64 +112,23 @@ void AFlockerBase::nearestNeighborRecurse(OctantBase* thisOct){
 		OctantBase** children = *thisOct->getChildren();
 		for (int i = 0; i < 8; ++i){
 
-			FVector tempCenter = children[i]->getCenter();
-			FVector tempHW = children[i]->getRadius();
+			// Projects a point distThresh units away towards the center of the other octant
+			// if that point is inside the other octant then subdivide in and continue
 
-			// Checks if any of the octant's verts are in the desired range.
-			// if they are it recurses into that octant to see if which actors are within the range
+			FVector towardsOtherCenter = pos - children[i]->getCenter();
+			towardsOtherCenter.Normalize();
 
-			if (FVector::DistSquared(tempCenter + tempHW, pos) < distThreshold){
+			towardsOtherCenter *= distThreshold;
+
+			if (children[i]->pointInBox(pos + towardsOtherCenter))
 				nearestNeighborRecurse(children[i]);
-				continue;
-			}
-
-			FVector centerOther;
-			centerOther.X = tempHW.X; centerOther.Y = tempHW.Y; centerOther.Z = -tempHW.Z;
-			if (FVector::DistSquared(centerOther, pos) < distThreshold){
-				nearestNeighborRecurse(children[i]);
-				continue;
-			}
-
-			centerOther.X = -tempHW.X; centerOther.Y = tempHW.Y; centerOther.Z = tempHW.Z;
-			if (FVector::DistSquared(centerOther, pos) < distThreshold){
-				nearestNeighborRecurse(children[i]);
-				continue;
-			}
-
-			centerOther.X = -tempHW.X; centerOther.Y = tempHW.Y; centerOther.Z = -tempHW.Z;
-			if (FVector::DistSquared(centerOther, pos) < distThreshold){
-				nearestNeighborRecurse(children[i]);
-				continue;
-			}
-
-			centerOther.X = tempHW.X; centerOther.Y = -tempHW.Y; centerOther.Z = tempHW.Z;
-			if (FVector::DistSquared(centerOther, pos) < distThreshold){
-				nearestNeighborRecurse(children[i]);
-				continue;
-			}
-
-			centerOther.X = -tempHW.X; centerOther.Y = -tempHW.Y; centerOther.Z = tempHW.Z;
-			if (FVector::DistSquared(centerOther, pos) < distThreshold){
-				nearestNeighborRecurse(children[i]);
-				continue;
-			}
-
-			centerOther.X = tempHW.X; centerOther.Y = -tempHW.Y; centerOther.Z = -tempHW.Z;
-			if (FVector::DistSquared(centerOther, pos) < distThreshold){
-				nearestNeighborRecurse(children[i]);
-				continue;
-			}
-
-			else if (FVector::DistSquared(tempCenter - tempHW, pos) < distThreshold){
-				nearestNeighborRecurse(children[i]);
-				continue;
-			}	
 		}
 	}
 	std::vector<AActor*> octFlock = *thisOct->getActors();
 	for (int i = 0; i < octFlock.size(); i++){
 		if (FVector::DistSquared(pos, octFlock[i]->GetActorLocation()) < distThreshold)
-		localFlockers.push_back(octFlock[i]);
+			localFlockers.push_back(octFlock[i]);
+		//centroid += octFlock[i]->GetActorLocation();
 	}
 }
 
@@ -216,6 +180,7 @@ void AFlockerBase::Tick( float DeltaTime )
 			//localFlockers = *(octantRef->getActors());
 			localFlockers.clear();
 			findLocalOct();
+			//centroid /= localFlockers.size();
 		}
 		centroid = calcCentroid();
 		findFlee();

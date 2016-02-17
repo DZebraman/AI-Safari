@@ -1,0 +1,693 @@
+﻿[2016.02.17-00.08.27:029][  0]Log file open, 02/16/16 19:08:27
+[2016.02.17-00.08.27:029][  0]LogInit:Display: Running engine for game: AISafari
+[2016.02.17-00.08.27:029][  0]LogInit:Display: RandInit(2034551421) SRandInit(2034551422).
+[2016.02.17-00.08.27:029][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.02.17-00.08.27:029][  0]LogStats: Stats thread started at 0.065266
+[2016.02.17-00.08.27:029][  0]LogInit: Version: 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2016.02.17-00.08.27:029][  0]LogInit: API Version: 2672455
+[2016.02.17-00.08.27:029][  0]LogInit: Compiled (64-bit): Sep 28 2015 10:25:44
+[2016.02.17-00.08.27:029][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2016.02.17-00.08.27:029][  0]LogInit: Build Configuration: Development
+[2016.02.17-00.08.27:029][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2016.02.17-00.08.27:029][  0]LogInit: Command line:  
+[2016.02.17-00.08.27:029][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.9/Engine/Binaries/Win64/
+[2016.02.17-00.08.27:029][  0]LogInit: Rocket: 1
+[2016.02.17-00.08.27:040][  0]LogInit: Using libcurl 7.41.0
+[2016.02.17-00.08.27:040][  0]LogInit:  - built for x86_64-pc-win32
+[2016.02.17-00.08.27:040][  0]LogInit:  - supports SSL with WinSSL
+[2016.02.17-00.08.27:040][  0]LogInit:  - other features:
+[2016.02.17-00.08.27:040][  0]LogInit:      CURL_VERSION_SSL
+[2016.02.17-00.08.27:040][  0]LogInit:      CURL_VERSION_IPV6
+[2016.02.17-00.08.27:040][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.02.17-00.08.27:040][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.02.17-00.08.27:040][  0]LogInit:      CURL_VERSION_IDN
+[2016.02.17-00.08.27:040][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.02.17-00.08.27:040][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.02.17-00.08.27:040][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.02.17-00.08.27:040][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.02.17-00.08.27:040][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.02.17-00.08.27:045][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.02.17-00.08.27:050][  0]LogInit: Object subsystem initialized
+[2016.02.17-00.08.27:051][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.17-00.08.27:051][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.02.17-00.08.27:057][  0]LogInit: Computer: ZEBRADESKTOP
+[2016.02.17-00.08.27:057][  0]LogInit: User: Ryan
+[2016.02.17-00.08.27:057][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.02.17-00.08.27:057][  0]LogInit: High frequency timer resolution =3.984654 MHz
+[2016.02.17-00.08.27:058][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.02.17-00.08.27:058][  0]LogMemory: Platform Memory Stats for Windows
+[2016.02.17-00.08.27:058][  0]LogMemory: Process Physical Memory: 54.83 MB used, 54.83 MB peak
+[2016.02.17-00.08.27:058][  0]LogMemory: Process Virtual Memory: 57.45 MB used, 57.45 MB peak
+[2016.02.17-00.08.27:058][  0]LogMemory: Physical Memory: 8382.22 MB used, 16325.73 MB total
+[2016.02.17-00.08.27:058][  0]LogMemory: Virtual Memory: 367.16 MB used, 134217728.00 MB total
+[2016.02.17-00.08.27:088][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.02.17-00.08.27:645][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 780 (Feature Level 11_0)
+[2016.02.17-00.08.27:645][  0]LogD3D11RHI: Adapter has 5971MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 3 output[s]
+[2016.02.17-00.08.27:647][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.02.17-00.08.27:647][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 0 output[s]
+[2016.02.17-00.08.27:647][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.02.17-00.08.29:345][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.17-00.08.29:348][  0]LogD3D11RHI: !Direct3DDevice
+[2016.02.17-00.08.29:348][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.02.17-00.08.29:364][  0]LogD3D11RHI: Async texture creation enabled
+[2016.02.17-00.08.29:381][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (Q:/Classes/3-2/AI/AISafari/Intermediate/Shaders/WorkingDirectory/34540/).
+[2016.02.17-00.08.29:381][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'Q:/Classes/3-2/AI/AISafari/Intermediate/Shaders/tmp/BE8BAA664F368053C8DFAE8C9BA0076A/'.
+[2016.02.17-00.08.29:381][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.02.17-00.08.30:096][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.02.17-00.08.30:100][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.02.17-00.08.30:104][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.02.17-00.08.30:108][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.02.17-00.08.30:112][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.02.17-00.08.30:114][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.02.17-00.08.30:117][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.02.17-00.08.30:119][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.02.17-00.08.30:123][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.02.17-00.08.30:127][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.02.17-00.08.30:131][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.02.17-00.08.30:136][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.02.17-00.08.30:136][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.02.17-00.08.30:154][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.02.17-00.08.30:157][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.02.17-00.08.30:160][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.02.17-00.08.30:162][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.02.17-00.08.30:162][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.02.17-00.08.30:227][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.02.17-00.08.30:268][  0]LogDerivedDataCache: Loaded boot cache 0.04s 41MB C:/Users/Ryan/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2016.02.17-00.08.30:268][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ryan/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
+[2016.02.17-00.08.30:268][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file Q:/Classes/3-2/AI/AISafari/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.02.17-00.08.30:268][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.02.17-00.08.30:268][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file Q:/Classes/3-2/AI/AISafari/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.02.17-00.08.30:268][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.02.17-00.08.30:368][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.02.17-00.08.30:380][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ryan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.02.17-00.08.30:499][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.17-00.08.30:501][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.02.17-00.08.30:587][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.02.17-00.08.30:587][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.02.17-00.08.30:776][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.02.17-00.08.31:272][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.02.17-00.08.31:368][  0]LogAssetRegistry: FAssetRegistry took 0.0113 seconds to start up
+[2016.02.17-00.08.31:476][  0]SourceControl: Info Source control is disabled
+[2016.02.17-00.08.31:486][  0]SourceControl: Info Source control is disabled
+[2016.02.17-00.08.31:494][  0]SourceControl: Info Source control is disabled
+[2016.02.17-00.08.31:500][  0]SourceControl: Info Source control is disabled
+[2016.02.17-00.08.31:592][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.02.17-00.08.31:642][  0]LogObj: 28380 objects as part of root set at end of initial load.
+[2016.02.17-00.08.31:642][  0]LogUObjectAllocator: 6046584 out of 0 bytes used by permanent object pool.
+[2016.02.17-00.08.31:692][  0]LogEngine: Initializing Engine...
+[2016.02.17-00.08.31:694][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
+[2016.02.17-00.08.31:694][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.02.17-00.08.31:779][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.02.17-00.08.31:785][  0]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.08.31:790][  0]LogInit: FAudioDevice initialized.
+[2016.02.17-00.08.31:809][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Ryan/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2016.02.17-00.08.31:813][  0]LogInit: Texture streaming: Enabled
+[2016.02.17-00.08.31:819][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.02.17-00.08.31:819][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2016.02.17-00.08.31:819][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId d1f9beca401d8fe412e57fa88e66abb9|85745c8591404a23957796735eaccf05|defee072-9da8-4f68-a06a-f65b3a6c30bf
+[2016.02.17-00.08.31:819][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.02.17-00.08.31:852][  0]LogInit: Transaction tracking system initialized
+[2016.02.17-00.08.31:877][  0]BlueprintLog: New page: Editor Load
+[2016.02.17-00.08.31:950][  0]LocalizationService: Info Localization service is disabled
+[2016.02.17-00.08.32:020][  0]LogConsoleResponse:Display: 
+[2016.02.17-00.08.32:127][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.02.17-00.08.32:184][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Content/' took 0.01s
+[2016.02.17-00.08.32:184][  0]SourceControl: Info Source control is disabled
+[2016.02.17-00.08.32:469][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.17-00.08.41:961][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.17-00.08.41:968][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.17-00.08.41:969][  0]Cmd: MAP LOAD FILE="Q:/Classes/3-2/AI/AISafari/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.02.17-00.08.41:969][  0]LightingResults: New page: Lighting Build
+[2016.02.17-00.08.41:972][  0]MapCheck: New page: Map Check
+[2016.02.17-00.08.41:972][  0]LightingResults: New page: Lighting Build
+[2016.02.17-00.08.41:985][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000768C143CE0
+[2016.02.17-00.08.42:199][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.08.42:206][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.02.17-00.08.42:207][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.02.17-00.08.42:246][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 37.897ms to complete.
+[2016.02.17-00.08.42:246][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.277
+[2016.02.17-00.08.42:248][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.17-00.08.42:349][  0]LogCollectionManager: Loaded 0 collections in 0.002220 seconds
+[2016.02.17-00.08.42:389][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Saved/Collections/' took 0.01s
+[2016.02.17-00.08.42:389][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Content/Developers/Ryan/Collections/' took 0.01s
+[2016.02.17-00.08.42:389][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Content/Collections/' took 0.01s
+[2016.02.17-00.08.42:389][  0]LogContentBrowser: Native class hierarchy populated in 0.0065 seconds. Added 1871 classes and 336 folders.
+[2016.02.17-00.08.42:403][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.02.17-00.08.42:410][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2016.02.17-00.08.42:437][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2016.02.17-00.08.42:441][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2016.02.17-00.08.42:455][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.02.17-00.08.42:459][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.02.17-00.08.42:482][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_7bbc_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_7d04_0///####STATCAT_Advanced####
+[2016.02.17-00.08.42:482][  0]LogLoad: Full Startup: 16.05 seconds (BP compile: 0.03 seconds)
+[2016.02.17-00.08.42:530][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.02.17-00.08.42:620][  0]LogRenderer: Reallocating scene render targets to support 1208x600 (Frame:2).
+[2016.02.17-00.08.42:826][  2]LogAssetRegistry: Asset discovery search completed in 11.4694 seconds
+[2016.02.17-00.08.42:826][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.02.17-00.08.42:826][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
+[2016.02.17-00.09.09:368][405]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.09.09:368][405]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.09.09:369][405]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:09:09 PM)
+[2016.02.17-00.09.09:369][405]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.09.09:374][405]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005359s)
+[2016.02.17-00.09.09:374][405]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.09.09:374][405]LogPlayLevel: PIE: World Init took: (0.000481s)
+[2016.02.17-00.09.09:375][405]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006021s)
+[2016.02.17-00.09.09:394][405]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.09.09:396][405]LogInit: FAudioDevice initialized.
+[2016.02.17-00.09.09:444][405]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.09.09:446][405]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.09.09
+[2016.02.17-00.09.09:446][405]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.09.09:446][405]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.09.09:447][405]LogWorld: Bringing up level for play took: 0.001510
+[2016.02.17-00.09.09:573][405]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.401
+[2016.02.17-00.09.09:573][405]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.09.13:139][425]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.09.13:192][425]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.09.13:206][425]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076C38654E0
+[2016.02.17-00.09.37:054][745]LogHotReload: New module detected: UE4Editor-AISafari-351.dll
+[2016.02.17-00.09.37:726][748]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.09.37:785][748]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.09.37:786][748]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.09.37:826][748]LogContentBrowser: Native class hierarchy populated in 0.0059 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.09.39:701][865]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.09.39:701][865]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.09.39:701][865]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:09:39 PM)
+[2016.02.17-00.09.39:701][865]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.09.39:706][865]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004984s)
+[2016.02.17-00.09.39:706][865]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.09.39:707][865]LogPlayLevel: PIE: World Init took: (0.000611s)
+[2016.02.17-00.09.39:707][865]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005729s)
+[2016.02.17-00.09.39:719][865]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.09.39:721][865]LogInit: FAudioDevice initialized.
+[2016.02.17-00.09.39:752][865]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.09.39:754][865]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.09.39
+[2016.02.17-00.09.39:754][865]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.09.39:754][865]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.09.39:754][865]LogWorld: Bringing up level for play took: 0.001415
+[2016.02.17-00.09.39:884][865]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.712
+[2016.02.17-00.09.39:884][865]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.09.54:010][  1]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.09.54:048][  1]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.09.54:063][  1]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076A27B89A0
+[2016.02.17-00.10.27:063][210]LogHotReload: New module detected: UE4Editor-AISafari-5899.dll
+[2016.02.17-00.10.27:735][213]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.10.27:782][213]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.10.27:783][213]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.10.27:823][213]LogContentBrowser: Native class hierarchy populated in 0.0062 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.10.30:758][330]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.10.30:758][330]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.10.30:759][330]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:10:30 PM)
+[2016.02.17-00.10.30:759][330]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.10.30:763][330]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004044s)
+[2016.02.17-00.10.30:763][330]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.10.30:763][330]LogPlayLevel: PIE: World Init took: (0.000494s)
+[2016.02.17-00.10.30:763][330]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.004671s)
+[2016.02.17-00.10.30:775][330]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.10.30:778][330]LogInit: FAudioDevice initialized.
+[2016.02.17-00.10.30:811][330]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.10.30:813][330]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.10.30
+[2016.02.17-00.10.30:813][330]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.10.30:813][330]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.10.30:813][330]LogWorld: Bringing up level for play took: 0.001528
+[2016.02.17-00.10.30:937][330]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.235
+[2016.02.17-00.10.30:937][330]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.10.42:589][352]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.10.42:626][352]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.10.42:642][352]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076A273D440
+[2016.02.17-00.10.58:368][555]LogHotReload: New module detected: UE4Editor-AISafari-9756.dll
+[2016.02.17-00.10.58:712][557]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.10.58:764][557]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.10.58:765][557]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.10.58:807][557]LogContentBrowser: Native class hierarchy populated in 0.0060 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.11.02:919][632]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.11.02:919][632]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.11.02:919][632]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:11:02 PM)
+[2016.02.17-00.11.02:919][632]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.11.02:924][632]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004805s)
+[2016.02.17-00.11.02:924][632]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.11.02:924][632]LogPlayLevel: PIE: World Init took: (0.000520s)
+[2016.02.17-00.11.02:924][632]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005461s)
+[2016.02.17-00.11.02:938][632]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.11.02:940][632]LogInit: FAudioDevice initialized.
+[2016.02.17-00.11.02:973][632]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.11.02:975][632]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.11.02
+[2016.02.17-00.11.02:975][632]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.11.02:975][632]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.11.02:975][632]LogWorld: Bringing up level for play took: 0.001470
+[2016.02.17-00.11.03:104][632]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.068
+[2016.02.17-00.11.03:104][632]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.11.11:697][849]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.11.11:732][849]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.11.11:746][849]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076A27D0900
+[2016.02.17-00.26.51:295][764]LogHotReload: New module detected: UE4Editor-AISafari-6661.dll
+[2016.02.17-00.26.51:634][766]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.26.51:687][766]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.26.51:687][766]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.26.51:730][766]LogContentBrowser: Native class hierarchy populated in 0.0061 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.27.10:295][821]LogHotReload: New module detected: UE4Editor-AISafari-1030.dll
+[2016.02.17-00.27.10:639][823]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.27.10:684][823]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.27.10:686][823]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.27.10:727][823]LogContentBrowser: Native class hierarchy populated in 0.0063 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.27.14:286][ 19]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.27.14:286][ 19]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.27.14:287][ 19]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:27:14 PM)
+[2016.02.17-00.27.14:287][ 19]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.27.14:291][ 19]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004687s)
+[2016.02.17-00.27.14:292][ 19]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.27.14:292][ 19]LogPlayLevel: PIE: World Init took: (0.000628s)
+[2016.02.17-00.27.14:292][ 19]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005491s)
+[2016.02.17-00.27.14:304][ 19]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.27.14:307][ 19]LogInit: FAudioDevice initialized.
+[2016.02.17-00.27.14:335][ 19]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.27.14:337][ 19]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.27.14
+[2016.02.17-00.27.14:337][ 19]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.27.14:337][ 19]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.27.14:337][ 19]LogWorld: Bringing up level for play took: 0.001502
+[2016.02.17-00.27.14:462][ 19]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.71
+[2016.02.17-00.27.14:462][ 19]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.27.59:081][614]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.27.59:114][614]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.27.59:129][614]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076A27154E0
+[2016.02.17-00.29.55:700][139]LogHotReload: New module detected: UE4Editor-AISafari-531.dll
+[2016.02.17-00.29.56:373][142]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.29.56:425][142]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.29.56:426][142]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.29.56:469][142]LogContentBrowser: Native class hierarchy populated in 0.0061 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.31.43:774][406]LogHotReload: New module detected: UE4Editor-AISafari-2477.dll
+[2016.02.17-00.31.44:114][408]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.31.44:176][408]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.31.44:177][408]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.31.44:220][408]LogContentBrowser: Native class hierarchy populated in 0.0062 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.32.21:249][847]LogHotReload: New module detected: UE4Editor-AISafari-6568.dll
+[2016.02.17-00.32.21:878][922]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.32.21:961][922]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.32.21:962][922]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.32.22:004][922]LogContentBrowser: Native class hierarchy populated in 0.0070 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.32.23:807][100]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.32.23:807][100]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.32.23:807][100]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:32:23 PM)
+[2016.02.17-00.32.23:807][100]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.32.23:812][100]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004758s)
+[2016.02.17-00.32.23:812][100]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.32.23:812][100]LogPlayLevel: PIE: World Init took: (0.000600s)
+[2016.02.17-00.32.23:813][100]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005533s)
+[2016.02.17-00.32.23:826][100]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.32.23:829][100]LogInit: FAudioDevice initialized.
+[2016.02.17-00.32.23:859][100]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.32.23:861][100]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.32.23
+[2016.02.17-00.32.23:861][100]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.32.23:861][100]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.32.23:861][100]LogWorld: Bringing up level for play took: 0.001515
+[2016.02.17-00.32.23:985][100]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.814
+[2016.02.17-00.32.23:985][100]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.32.58:621][474]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.32.58:660][474]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.32.58:675][474]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076A272A020
+[2016.02.17-00.33.11:623][ 85]LogHotReload: New module detected: UE4Editor-AISafari-47.dll
+[2016.02.17-00.33.12:299][ 88]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.33.12:364][ 88]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0014 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.33.12:366][ 88]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.33.12:411][ 88]LogContentBrowser: Native class hierarchy populated in 0.0063 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.33.14:168][193]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.33.14:168][193]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.33.14:168][193]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:33:14 PM)
+[2016.02.17-00.33.14:168][193]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.33.14:173][193]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004751s)
+[2016.02.17-00.33.14:174][193]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.33.14:174][193]LogPlayLevel: PIE: World Init took: (0.000700s)
+[2016.02.17-00.33.14:174][193]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005626s)
+[2016.02.17-00.33.14:193][193]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.33.14:197][193]LogInit: FAudioDevice initialized.
+[2016.02.17-00.33.14:228][193]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.33.14:230][193]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.33.14
+[2016.02.17-00.33.14:230][193]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.33.14:230][193]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.33.14:230][193]LogWorld: Bringing up level for play took: 0.001467
+[2016.02.17-00.33.14:354][193]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 1.182
+[2016.02.17-00.33.14:354][193]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.33.45:058][391]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.33.45:095][391]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.33.45:110][391]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076D02D5260
+[2016.02.17-00.33.56:205][ 15]LogHotReload: New module detected: UE4Editor-AISafari-6084.dll
+[2016.02.17-00.33.56:823][ 88]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.33.56:900][ 88]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0010 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.33.56:901][ 88]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.33.56:943][ 88]LogContentBrowser: Native class hierarchy populated in 0.0063 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.33.57:545][137]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.33.57:545][137]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.33.57:545][137]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:33:57 PM)
+[2016.02.17-00.33.57:545][137]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.33.57:550][137]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005504s)
+[2016.02.17-00.33.57:551][137]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.33.57:551][137]LogPlayLevel: PIE: World Init took: (0.000651s)
+[2016.02.17-00.33.57:551][137]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006363s)
+[2016.02.17-00.33.57:566][137]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.33.57:569][137]LogInit: FAudioDevice initialized.
+[2016.02.17-00.33.57:601][137]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.33.57:603][137]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.33.57
+[2016.02.17-00.33.57:603][137]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.33.57:603][137]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.33.57:603][137]LogWorld: Bringing up level for play took: 0.001474
+[2016.02.17-00.33.57:743][137]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.572
+[2016.02.17-00.33.57:744][137]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.34.13:619][691]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.34.13:657][691]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.34.13:676][691]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076A2748C20
+[2016.02.17-00.34.27:657][232]LogHotReload: New module detected: UE4Editor-AISafari-7650.dll
+[2016.02.17-00.34.27:998][234]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.34.28:082][234]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.34.28:084][234]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.34.28:138][234]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.34.30:393][326]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.34.30:393][326]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.34.30:393][326]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:34:30 PM)
+[2016.02.17-00.34.30:393][326]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.34.30:398][326]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004553s)
+[2016.02.17-00.34.30:398][326]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.34.30:399][326]LogPlayLevel: PIE: World Init took: (0.000713s)
+[2016.02.17-00.34.30:399][326]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005452s)
+[2016.02.17-00.34.30:413][326]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.34.30:415][326]LogInit: FAudioDevice initialized.
+[2016.02.17-00.34.30:443][326]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.34.30:445][326]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.34.30
+[2016.02.17-00.34.30:445][326]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.34.30:445][326]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.34.30:445][326]LogWorld: Bringing up level for play took: 0.001435
+[2016.02.17-00.34.30:570][326]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.601
+[2016.02.17-00.34.30:570][326]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.35.20:140][554]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.35.20:179][554]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.35.20:194][554]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000077210B51C0
+[2016.02.17-00.36.47:586][720]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.36.47:586][720]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.36.47:586][720]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:36:47 PM)
+[2016.02.17-00.36.47:586][720]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.36.47:591][720]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004688s)
+[2016.02.17-00.36.47:591][720]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.36.47:592][720]LogPlayLevel: PIE: World Init took: (0.000567s)
+[2016.02.17-00.36.47:592][720]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005440s)
+[2016.02.17-00.36.47:607][720]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.36.47:610][720]LogInit: FAudioDevice initialized.
+[2016.02.17-00.36.47:644][720]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.36.47:646][720]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.36.47
+[2016.02.17-00.36.47:646][720]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.36.47:646][720]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.36.47:646][720]LogWorld: Bringing up level for play took: 0.001526
+[2016.02.17-00.36.47:775][720]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.604
+[2016.02.17-00.36.47:775][720]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.37.22:198][219]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.37.22:241][219]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.37.22:262][219]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000007720720F40
+[2016.02.17-00.37.25:584][612]LogEditorViewport: Clicking on Actor (LMB): BP_FlockerManagerBase_C (BP_FlockerManagerBase)
+[2016.02.17-00.37.30:091][145]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.37.30:091][145]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.37.30:091][145]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:37:30 PM)
+[2016.02.17-00.37.30:091][145]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.37.30:096][145]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005110s)
+[2016.02.17-00.37.30:097][145]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.37.30:097][145]LogPlayLevel: PIE: World Init took: (0.000666s)
+[2016.02.17-00.37.30:097][145]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005954s)
+[2016.02.17-00.37.30:110][145]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.37.30:113][145]LogInit: FAudioDevice initialized.
+[2016.02.17-00.37.30:147][145]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.37.30:149][145]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.37.30
+[2016.02.17-00.37.30:149][145]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.37.30:149][145]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.37.30:149][145]LogWorld: Bringing up level for play took: 0.001562
+[2016.02.17-00.37.30:290][145]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 1.118
+[2016.02.17-00.37.30:290][145]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.37.37:735][379]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.37.37:773][379]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.37.37:795][379]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000077B4A0B1A0
+[2016.02.17-00.37.50:385][515]LogHotReload: New module detected: UE4Editor-AISafari-6741.dll
+[2016.02.17-00.37.50:889][572]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.37.50:954][572]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.37.50:955][572]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.37.51:000][572]LogContentBrowser: Native class hierarchy populated in 0.0076 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.37.56:254][167]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.37.56:254][167]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.37.56:254][167]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:37:56 PM)
+[2016.02.17-00.37.56:254][167]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.37.56:259][167]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005221s)
+[2016.02.17-00.37.56:260][167]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.37.56:260][167]LogPlayLevel: PIE: World Init took: (0.000542s)
+[2016.02.17-00.37.56:260][167]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005917s)
+[2016.02.17-00.37.56:274][167]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.37.56:276][167]LogInit: FAudioDevice initialized.
+[2016.02.17-00.37.56:305][167]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.37.56:306][167]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.37.56
+[2016.02.17-00.37.56:306][167]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.37.56:307][167]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.37.56:307][167]LogWorld: Bringing up level for play took: 0.001539
+[2016.02.17-00.37.56:440][167]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.731
+[2016.02.17-00.37.56:441][167]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.38.12:994][666]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.38.13:050][666]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.38.13:067][666]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000077210B58A0
+[2016.02.17-00.38.19:014][371]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.38.19:014][371]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.38.19:014][371]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:38:19 PM)
+[2016.02.17-00.38.19:014][371]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.38.19:019][371]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004568s)
+[2016.02.17-00.38.19:019][371]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.38.19:020][371]LogPlayLevel: PIE: World Init took: (0.000648s)
+[2016.02.17-00.38.19:020][371]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005413s)
+[2016.02.17-00.38.19:036][371]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.38.19:039][371]LogInit: FAudioDevice initialized.
+[2016.02.17-00.38.19:069][371]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.38.19:071][371]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.38.19
+[2016.02.17-00.38.19:071][371]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.38.19:071][371]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.38.19:071][371]LogWorld: Bringing up level for play took: 0.001748
+[2016.02.17-00.38.19:198][371]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.026
+[2016.02.17-00.38.19:198][371]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.38.30:755][718]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.38.30:802][718]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.38.30:824][718]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000077DD1B6660
+[2016.02.17-00.38.49:007][126]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default" FILE="Q:/Classes/3-2/AI/AISafari/Content/StarterContent/Maps/Minimal_Default.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.02.17-00.38.49:060][126]LogSavePackage: Save=39.372303ms
+[2016.02.17-00.38.49:060][126]LogSavePackage: Moving 'Q:/Classes/3-2/AI/AISafari/Saved/Minimal_Default1897868B4ACEDF5CD6B71AA838ADF294.tmp' to 'Q:/Classes/3-2/AI/AISafari/Content/StarterContent/Maps/Minimal_Default.umap'
+[2016.02.17-00.38.49:062][126]LogSavePackage: Total save time: 45.868978ms
+[2016.02.17-00.38.49:062][126]LogSavePackage:Warning: Finished SavePackage Q:/Classes/3-2/AI/AISafari/Content/StarterContent/Maps/Minimal_Default.umap
+[2016.02.17-00.38.49:080][126]LogFileHelpers: Saving map 'Minimal_Default' took 0.106
+[2016.02.17-00.38.53:480][253]LogHotReload: New module detected: UE4Editor-AISafari-3437.dll
+[2016.02.17-00.38.53:819][255]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.38.53:881][255]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.38.53:882][255]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.38.53:931][255]LogContentBrowser: Native class hierarchy populated in 0.0061 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.38.55:816][365]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.38.55:816][365]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.38.55:816][365]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:38:55 PM)
+[2016.02.17-00.38.55:816][365]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.38.55:821][365]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004374s)
+[2016.02.17-00.38.55:821][365]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.38.55:821][365]LogPlayLevel: PIE: World Init took: (0.000649s)
+[2016.02.17-00.38.55:822][365]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005374s)
+[2016.02.17-00.38.55:834][365]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.38.55:836][365]LogInit: FAudioDevice initialized.
+[2016.02.17-00.38.55:868][365]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.38.55:870][365]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.38.55
+[2016.02.17-00.38.55:870][365]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.38.55:870][365]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.38.55:870][365]LogWorld: Bringing up level for play took: 0.001426
+[2016.02.17-00.38.55:963][365]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.791
+[2016.02.17-00.38.55:963][365]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.05:156][464]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.05:210][464]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.05:223][464]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076E263D440
+[2016.02.17-00.39.13:929][499]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.13:929][499]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.39.13:929][499]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:39:13 PM)
+[2016.02.17-00.39.13:929][499]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.39.13:936][499]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006126s)
+[2016.02.17-00.39.13:936][499]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.39.13:936][499]LogPlayLevel: PIE: World Init took: (0.000618s)
+[2016.02.17-00.39.13:936][499]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006953s)
+[2016.02.17-00.39.13:950][499]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.39.13:953][499]LogInit: FAudioDevice initialized.
+[2016.02.17-00.39.13:984][499]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.39.13:986][499]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.39.13
+[2016.02.17-00.39.13:986][499]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.39.13:986][499]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.39.13:986][499]LogWorld: Bringing up level for play took: 0.001431
+[2016.02.17-00.39.13:996][499]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.825
+[2016.02.17-00.39.13:996][499]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.19:498][145]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.19:529][145]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.19:545][145]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000077D3FBAF20
+[2016.02.17-00.39.29:966][389]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.29:966][389]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.39.29:966][389]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:39:29 PM)
+[2016.02.17-00.39.29:966][389]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.39.29:971][389]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004486s)
+[2016.02.17-00.39.29:971][389]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.39.29:971][389]LogPlayLevel: PIE: World Init took: (0.000483s)
+[2016.02.17-00.39.29:971][389]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005119s)
+[2016.02.17-00.39.29:985][389]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.39.29:988][389]LogInit: FAudioDevice initialized.
+[2016.02.17-00.39.30:019][389]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.39.30:021][389]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.39.30
+[2016.02.17-00.39.30:021][389]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.39.30:021][389]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.39.30:021][389]LogWorld: Bringing up level for play took: 0.001462
+[2016.02.17-00.39.31:415][389]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 2.243
+[2016.02.17-00.39.31:415][389]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.38:028][408]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.38:402][408]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.38:417][408]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000077F2C37F60
+[2016.02.17-00.39.47:923][685]LogHotReload: New module detected: UE4Editor-AISafari-9860.dll
+[2016.02.17-00.39.48:262][687]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.39.48:319][687]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0009 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.39.48:320][687]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.39.48:364][687]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.39.50:268][692]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.50:268][692]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.39.50:268][692]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:39:50 PM)
+[2016.02.17-00.39.50:268][692]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.39.50:273][692]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005164s)
+[2016.02.17-00.39.50:274][692]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.39.50:274][692]LogPlayLevel: PIE: World Init took: (0.000794s)
+[2016.02.17-00.39.50:274][692]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006170s)
+[2016.02.17-00.39.50:291][692]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.39.50:295][692]LogInit: FAudioDevice initialized.
+[2016.02.17-00.39.50:323][692]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.39.50:326][692]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.39.50
+[2016.02.17-00.39.50:326][692]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.39.50:326][692]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.39.50:326][692]LogWorld: Bringing up level for play took: 0.001655
+[2016.02.17-00.39.50:450][692]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.721
+[2016.02.17-00.39.50:451][692]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.52:144][870]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.52:197][870]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.52:211][870]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076E263E480
+[2016.02.17-00.39.53:021][962]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.53:021][962]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.39.53:021][962]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:39:53 PM)
+[2016.02.17-00.39.53:021][962]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.39.53:025][962]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004343s)
+[2016.02.17-00.39.53:025][962]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.39.53:026][962]LogPlayLevel: PIE: World Init took: (0.000534s)
+[2016.02.17-00.39.53:026][962]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005024s)
+[2016.02.17-00.39.53:042][962]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.39.53:044][962]LogInit: FAudioDevice initialized.
+[2016.02.17-00.39.53:074][962]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.39.53:076][962]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.39.53
+[2016.02.17-00.39.53:076][962]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.39.53:076][962]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.39.53:076][962]LogWorld: Bringing up level for play took: 0.001541
+[2016.02.17-00.39.53:202][962]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.03
+[2016.02.17-00.39.53:202][962]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.58:646][105]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.58:710][105]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.39.58:731][105]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076D46134C0
+[2016.02.17-00.39.59:781][217]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.02.17-00.40.00:176][217]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0019 seconds. Added 107 classes and 0 folders.
+[2016.02.17-00.40.06:473][898]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.40.06:473][898]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.02.17-00.40.06:475][898]LogPlayLevel: [PlayLevel] Compiling BP_FlockerBase before play...
+[2016.02.17-00.40.06:505][898]LogPlayLevel: PlayLevel: Blueprint regeneration took 31 ms (1 blueprints)
+[2016.02.17-00.40.06:525][898]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:40:06 PM)
+[2016.02.17-00.40.06:525][898]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.40.06:529][898]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004296s)
+[2016.02.17-00.40.06:530][898]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.40.06:530][898]LogPlayLevel: PIE: World Init took: (0.000525s)
+[2016.02.17-00.40.06:530][898]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.004966s)
+[2016.02.17-00.40.06:553][898]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.40.06:555][898]LogInit: FAudioDevice initialized.
+[2016.02.17-00.40.06:589][898]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.40.06:591][898]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.40.06
+[2016.02.17-00.40.06:591][898]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.40.06:591][898]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.40.06:591][898]LogWorld: Bringing up level for play took: 0.001329
+[2016.02.17-00.40.06:720][898]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.451
+[2016.02.17-00.40.06:721][898]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.40.47:867][817]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.40.47:936][817]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.40.47:959][817]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000078036AC540
+[2016.02.17-00.40.57:506][ 54]LogHotReload: New module detected: UE4Editor-AISafari-6201.dll
+[2016.02.17-00.40.57:848][ 56]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.40.57:927][ 56]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0014 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.40.57:931][ 56]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.40.58:265][ 56]LogContentBrowser: Native class hierarchy populated in 0.0060 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.41.00:053][182]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.41.00:053][182]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.41.00:053][182]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:41:00 PM)
+[2016.02.17-00.41.00:053][182]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.41.00:058][182]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004752s)
+[2016.02.17-00.41.00:059][182]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.41.00:059][182]LogPlayLevel: PIE: World Init took: (0.000675s)
+[2016.02.17-00.41.00:059][182]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005624s)
+[2016.02.17-00.41.00:102][182]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.41.00:104][182]LogInit: FAudioDevice initialized.
+[2016.02.17-00.41.00:137][182]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.41.00:139][182]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.41.00
+[2016.02.17-00.41.00:139][182]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.41.00:139][182]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.41.00:139][182]LogWorld: Bringing up level for play took: 0.001443
+[2016.02.17-00.41.00:273][182]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 1.101
+[2016.02.17-00.41.00:273][182]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.41.49:559][732]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.41.49:601][732]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.41.49:631][732]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000076BC0D8180
+[2016.02.17-00.42.00:535][126]LogHotReload: New module detected: UE4Editor-AISafari-4282.dll
+[2016.02.17-00.42.01:065][186]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.42.01:176][186]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0013 seconds. Added 4 classes and 3 folders.
+[2016.02.17-00.42.01:182][186]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.17-00.42.01:553][186]LogContentBrowser: Native class hierarchy populated in 0.0060 seconds. Added 1872 classes and 338 folders.
+[2016.02.17-00.42.01:710][196]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.42.01:710][196]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.17-00.42.01:710][196]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 2:42:01 PM)
+[2016.02.17-00.42.01:710][196]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.17-00.42.01:714][196]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004504s)
+[2016.02.17-00.42.01:715][196]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.17-00.42.01:715][196]LogPlayLevel: PIE: World Init took: (0.000544s)
+[2016.02.17-00.42.01:715][196]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005197s)
+[2016.02.17-00.42.01:767][196]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.02.17-00.42.01:770][196]LogInit: FAudioDevice initialized.
+[2016.02.17-00.42.01:804][196]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.17-00.42.01:806][196]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-19.42.01
+[2016.02.17-00.42.01:806][196]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.42.01:806][196]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.17-00.42.01:806][196]LogWorld: Bringing up level for play took: 0.001490
+[2016.02.17-00.42.01:931][196]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.76
+[2016.02.17-00.42.01:932][196]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.42.24:965][865]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.42.25:013][865]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.17-00.42.25:054][865]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000077B507B9C0
+[2016.02.17-00.51.15:697][571]LogSavePackage: Save=50.853851ms
+[2016.02.17-00.51.15:697][571]LogSavePackage: Moving 'Q:/Classes/3-2/AI/AISafari/Saved/Minimal_Default_Auto1AD992421410DCD1FD8F346A612402DED.tmp' to 'Q:/Classes/3-2/AI/AISafari/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap'
+[2016.02.17-00.51.15:697][571]LogSavePackage: Total save time: 56.241520ms
+[2016.02.17-00.51.15:697][571]LogSavePackage:Warning: Finished SavePackage Q:/Classes/3-2/AI/AISafari/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap
+[2016.02.17-00.51.15:698][571]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.089
+[2016.02.17-00.51.15:698][571]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.089
+[2016.02.17-00.51.15:704][571]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AgentBlueprints/BP_FlockerBase] ([1] browsable assets)...
+[2016.02.17-00.51.15:715][571]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/AgentBlueprints/BP_FlockerBase.BP_FlockerBase]
+[2016.02.17-00.51.15:715][571]OBJ SavePackage: Finished generating thumbnails for package [/Game/AgentBlueprints/BP_FlockerBase]
+[2016.02.17-00.51.15:715][571]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgentBlueprints/BP_FlockerBase" FILE="Q:/Classes/3-2/AI/AISafari/Saved/Autosaves/Game/AgentBlueprints/BP_FlockerBase_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.02.17-00.51.15:733][571]LogSavePackage: Save=12.972268ms
+[2016.02.17-00.51.15:733][571]LogSavePackage: Moving 'Q:/Classes/3-2/AI/AISafari/Saved/BP_FlockerBase_Auto168C97DE248F1FBAD75A11CB57C12738D.tmp' to 'Q:/Classes/3-2/AI/AISafari/Saved/Autosaves/Game/AgentBlueprints/BP_FlockerBase_Auto1.uasset'
+[2016.02.17-00.51.15:733][571]LogSavePackage: Total save time: 17.395988ms
+[2016.02.17-00.51.15:733][571]LogSavePackage:Warning: Finished SavePackage Q:/Classes/3-2/AI/AISafari/Saved/Autosaves/Game/AgentBlueprints/BP_FlockerBase_Auto1.uasset
+[2016.02.17-00.51.15:734][571]LogFileHelpers: Auto-saving content packages took 0.034
+[2016.02.17-00.53.45:509][ 21]LogHotReload: New module detected: UE4Editor-AISafari-6247.dll
+[2016.02.17-00.53.45:850][ 23]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.17-00.53.46:197][ 23]LogCrashTracker: 
+
+
+[2016.02.17-00.53.46:198][ 23]LogCrashTracker: 
+
+
+[2016.02.17-00.53.46:198][ 23]LogWindows: === Critical error: ===
+Fatal error!
+
+
+
+[2016.02.17-00.53.46:284][ 23]LogExit: Executing StaticShutdownAfterError
+[2016.02.17-00.53.46:295][ 23]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.02.17-00.53.46:296][ 23]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.02.17-00.53.46:296][ 23]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.02.17-00.53.46:296][ 23]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.02.17-00.53.46:296][ 23]LogWindows: FPlatformMisc::RequestExit(1)
+[2016.02.17-00.53.46:296][ 23]Log file closed, 02/16/16 19:53:46

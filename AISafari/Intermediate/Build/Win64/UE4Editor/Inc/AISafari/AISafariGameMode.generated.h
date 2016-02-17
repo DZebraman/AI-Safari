@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AISAFARI_AISafariGameMode_generated_h
 
-#define AISafari_Source_AISafari_AISafariGameMode_h_14_RPC_WRAPPERS
-#define AISafari_Source_AISafari_AISafariGameMode_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define AISafari_Source_AISafari_AISafariGameMode_h_14_INCLASS_NO_PURE_DECLS \
+#define AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_RPC_WRAPPERS
+#define AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAAISafariGameMode(); \
 	friend AISAFARI_API class UClass* Z_Construct_UClass_AAISafariGameMode(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AAISafariGameMode*>(this); }
 
 
-#define AISafari_Source_AISafari_AISafariGameMode_h_14_INCLASS \
+#define AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_INCLASS \
 	private: \
 	static void StaticRegisterNativesAAISafariGameMode(); \
 	friend AISAFARI_API class UClass* Z_Construct_UClass_AAISafariGameMode(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AAISafariGameMode*>(this); }
 
 
-#define AISafari_Source_AISafari_AISafariGameMode_h_14_STANDARD_CONSTRUCTORS \
+#define AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AAISafariGameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAISafariGameMode) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define AISafari_Source_AISafari_AISafariGameMode_h_14_ENHANCED_CONSTRUCTORS \
+#define AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AAISafariGameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -61,29 +61,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAISafariGameMode); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAISafariGameMode)
 
 
-#define AISafari_Source_AISafari_AISafariGameMode_h_11_PROLOG
-#define AISafari_Source_AISafari_AISafariGameMode_h_14_GENERATED_BODY_LEGACY \
+#define AISafari_4_10_Source_AISafari_AISafariGameMode_h_11_PROLOG
+#define AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	AISafari_Source_AISafari_AISafariGameMode_h_14_RPC_WRAPPERS \
-	AISafari_Source_AISafari_AISafariGameMode_h_14_INCLASS \
-	AISafari_Source_AISafari_AISafariGameMode_h_14_STANDARD_CONSTRUCTORS \
+	AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_RPC_WRAPPERS \
+	AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_INCLASS \
+	AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define AISafari_Source_AISafari_AISafariGameMode_h_14_GENERATED_BODY \
+#define AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	AISafari_Source_AISafari_AISafariGameMode_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	AISafari_Source_AISafari_AISafariGameMode_h_14_INCLASS_NO_PURE_DECLS \
-	AISafari_Source_AISafari_AISafariGameMode_h_14_ENHANCED_CONSTRUCTORS \
+	AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_INCLASS_NO_PURE_DECLS \
+	AISafari_4_10_Source_AISafari_AISafariGameMode_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID AISafari_Source_AISafari_AISafariGameMode_h
+#define CURRENT_FILE_ID AISafari_4_10_Source_AISafari_AISafariGameMode_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

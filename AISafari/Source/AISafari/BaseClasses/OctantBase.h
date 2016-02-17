@@ -16,13 +16,12 @@ protected:
 	OctantBase** children;
 	OctantBase* head;
 	//super simple check to see if point is in the box
-	virtual bool pointInBox(FVector point);
 	std::vector<AActor*> localActors;
 	
-	int maxRecursions = 5;
+	int maxRecursions = 8;
 	int currentRecursion;
 
-	int lowerActorLimit = 40;
+	int lowerActorLimit = 5;
 	UWorld* world;
 	bool bHasChildren = false;
 	
@@ -40,6 +39,8 @@ public:
 	virtual FVector getRadius();
 	virtual bool hasChildren();
 	virtual bool hasHead();
+	virtual bool pointInBox(FVector point);
+
 	virtual OctantBase*** getChildren();
 	virtual OctantBase* getHead();
 	virtual std::vector<AActor*>* getActors();

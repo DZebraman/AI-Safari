@@ -7,10 +7,11 @@
     <Property Name="Precompile" Value="False" />
   </Properties>
   <BuildProducts>
-    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-AISafari-2644.dll" Type="DynamicLibrary" />
-    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-AISafari-2644.pdb" Type="SymbolFile" />
-    <BuildProduct Path="$(ProjectDir)\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-AISafari-2644.lib" Type="ImportLibrary" />
+    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-AISafari-5076.dll" Type="DynamicLibrary" />
+    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-AISafari-5076.pdb" Type="SymbolFile" />
+    <BuildProduct Path="$(ProjectDir)\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-AISafari-5076.lib" Type="ImportLibrary" />
   </BuildProducts>
   <RuntimeDependencies />
+  <AdditionalProperties />
   <bRequireDependenciesToExist>true</bRequireDependenciesToExist>
 </BuildReceipt>

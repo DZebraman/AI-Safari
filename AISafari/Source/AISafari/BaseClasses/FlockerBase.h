@@ -4,6 +4,10 @@
 #include "GameFramework/Actor.h"
 #include <vector>
 #include "FlockerBase.generated.h"
+
+// For Profiler
+DECLARE_STATS_GROUP(TEXT("Flocker"), STATGROUP_Flocker, STATCAT_Advanced);
+
 //--------FWD Declaration-----------
 class AFlockerManagerBase;
 
@@ -18,6 +22,7 @@ protected:
 	std::vector<int> localFlockerID;
 	char * ACTORTYPE = "baseFlockers";
 	int numFlockers;
+	int numOctantsInCentroid;
 
 	FVector centroid, sepV;
 public:	

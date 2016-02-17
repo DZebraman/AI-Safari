@@ -12,19 +12,19 @@ void EmptyLinkFunctionForGeneratedCodeAISafari() {}
 	void AAISafariGameMode::StaticRegisterNativesAAISafariGameMode()
 	{
 	}
-	IMPLEMENT_CLASS(AAISafariGameMode, 3611705738);
+	IMPLEMENT_CLASS(AAISafariGameMode, 1348248163);
 	void AAutoAgent::StaticRegisterNativesAAutoAgent()
 	{
 	}
-	IMPLEMENT_CLASS(AAutoAgent, 1100564679);
+	IMPLEMENT_CLASS(AAutoAgent, 2900658823);
 	void AFlockerBase::StaticRegisterNativesAFlockerBase()
 	{
 	}
-	IMPLEMENT_CLASS(AFlockerBase, 4066395474);
+	IMPLEMENT_CLASS(AFlockerBase, 2705381589);
 	void AFlockerManagerBase::StaticRegisterNativesAFlockerManagerBase()
 	{
 	}
-	IMPLEMENT_CLASS(AFlockerManagerBase, 1273385535);
+	IMPLEMENT_CLASS(AFlockerManagerBase, 3333216553);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
@@ -208,9 +208,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		if (!ReturnPackage)
 		{
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/AISafari")), false, false));
-			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
+			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xDBCE3C78;
+			Guid.A = 0x62F63EA8;
 			Guid.B = 0xAF819E7C;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

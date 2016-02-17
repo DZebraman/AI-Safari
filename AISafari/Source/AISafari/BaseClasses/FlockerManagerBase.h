@@ -35,6 +35,8 @@ public:
 
 	AFlockerBase** flockers;
 	
+	//updates 10 times a second
+	virtual void updateOctree();
 
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;

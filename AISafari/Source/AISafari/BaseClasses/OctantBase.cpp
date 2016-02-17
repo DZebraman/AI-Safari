@@ -15,19 +15,21 @@ OctantBase::OctantBase(FVector _center, FVector _halfwidth, std::vector<AActor*>
 	if (halfwidth.Size() * 2 > 400)
 		maxRecursions += ((halfwidth.Size() * 2) - 400) / 100 ;
 
-
 	currentRecursion = recursionDepth;
 
 	if (localActors.size() > lowerActorLimit && currentRecursion < maxRecursions)
 		subdivide();
+	else{
+		for (int i = 0; i < localActors.size(); ++i){
+			((AAutoAgent*)localActors[i])->setOctant(this);
+		}
+	}
 }
 
 void OctantBase::setActors(std::vector<AActor*>& newActors){
 	for (int i = 0; i < newActors.size(); ++i){
 		if (pointInBox(newActors[i]->GetActorLocation())){
 			localActors.push_back(newActors[i]);
-
-			((AAutoAgent*)newActors[i])->setOctant(this);
 		}
 	}
 }
@@ -37,8 +39,9 @@ void OctantBase::draw(){
 		for (int i = 0; i < 8; i++){
 			children[i]->draw();
 		}
-	}
-	DrawDebugBox(world, center, halfwidth, FColor::Red);
+		DrawDebugBox(world, center, halfwidth, FColor::Red);
+	}else
+		DrawDebugBox(world, center, halfwidth, FColor::Black);
 }
 
 void OctantBase::killChildren(){
