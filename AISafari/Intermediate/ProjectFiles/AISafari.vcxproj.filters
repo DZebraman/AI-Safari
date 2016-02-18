@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\AISafari.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{E6F3C523-6683-4011-B01E-966591F03220}</UniqueIdentifier>
+			<UniqueIdentifier>{5DB14C2B-10EF-4F7E-92F7-DACD5DF7737E}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\AISafari.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{7315AC74-5FB7-4C76-9CB5-C680F8006146}</UniqueIdentifier>
+			<UniqueIdentifier>{96E3A311-2A88-4CB0-AA35-6A5E807279BE}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -25,7 +25,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\AISafari">
-			<UniqueIdentifier>{F8497DBE-3131-46BA-AB8B-B7C44E5DFF92}</UniqueIdentifier>
+			<UniqueIdentifier>{B12E3355-93B0-4E5D-96DC-FB6AA067739A}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\AISafari\AISafari.Build.cs">
 			<Filter>Source\AISafari</Filter>
@@ -43,7 +43,7 @@
 			<Filter>Source\AISafari</Filter>
 		</ClInclude >
 		<Filter Include="Source\AISafari\BaseClasses">
-			<UniqueIdentifier>{D4595E15-A23B-49DD-8D3F-4B684E185BAA}</UniqueIdentifier>
+			<UniqueIdentifier>{526DD333-C8A4-4685-9E88-324A79D06823}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\AISafari\BaseClasses\ActorReferenceStruct.cpp">
 			<Filter>Source\AISafari\BaseClasses</Filter>
@@ -55,6 +55,12 @@
 			<Filter>Source\AISafari\BaseClasses</Filter>
 		</ClCompile >
 		<ClInclude Include="..\..\Source\AISafari\BaseClasses\AutoAgent.h">
+			<Filter>Source\AISafari\BaseClasses</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\AISafari\BaseClasses\EmuBrain.cpp">
+			<Filter>Source\AISafari\BaseClasses</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\AISafari\BaseClasses\EmuBrain.h">
 			<Filter>Source\AISafari\BaseClasses</Filter>
 		</ClInclude >
 		<ClCompile Include="..\..\Source\AISafari\BaseClasses\FlockerBase.cpp">

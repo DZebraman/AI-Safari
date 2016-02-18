@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AISAFARI_FlockerBase_generated_h
 
-#define AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_RPC_WRAPPERS
-#define AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS
-#define AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_INCLASS_NO_PURE_DECLS \
+#define AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_RPC_WRAPPERS
+#define AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAFlockerBase(); \
 	friend AISAFARI_API class UClass* Z_Construct_UClass_AFlockerBase(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AFlockerBase*>(this); }
 
 
-#define AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_INCLASS \
+#define AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_INCLASS \
 	private: \
 	static void StaticRegisterNativesAFlockerBase(); \
 	friend AISAFARI_API class UClass* Z_Construct_UClass_AFlockerBase(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AFlockerBase*>(this); }
 
 
-#define AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_STANDARD_CONSTRUCTORS \
+#define AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFlockerBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFlockerBase) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_ENHANCED_CONSTRUCTORS \
+#define AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API AFlockerBase(const AFlockerBase& InCopy); \
@@ -59,29 +59,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFlockerBase); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFlockerBase)
 
 
-#define AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_14_PROLOG
-#define AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_GENERATED_BODY_LEGACY \
+#define AISafari_Source_AISafari_BaseClasses_FlockerBase_h_14_PROLOG
+#define AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_RPC_WRAPPERS \
-	AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_INCLASS \
-	AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_STANDARD_CONSTRUCTORS \
+	AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_RPC_WRAPPERS \
+	AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_INCLASS \
+	AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_GENERATED_BODY \
+#define AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_INCLASS_NO_PURE_DECLS \
-	AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h_17_ENHANCED_CONSTRUCTORS \
+	AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_INCLASS_NO_PURE_DECLS \
+	AISafari_Source_AISafari_BaseClasses_FlockerBase_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID AISafari_4_10_Source_AISafari_BaseClasses_FlockerBase_h
+#define CURRENT_FILE_ID AISafari_Source_AISafari_BaseClasses_FlockerBase_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

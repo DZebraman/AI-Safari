@@ -467,8 +467,8 @@ C:\Program Files (x86)\Epic Games\4.10\Engine\Plugins\ScriptGeneratorPlugin\Sour
 C:\Program Files (x86)\Epic Games\4.10\Engine\Plugins\ScriptPlugin\Source\ScriptEditorPlugin\ScriptEditorPlugin.Build.cs
 C:\Program Files (x86)\Epic Games\4.10\Engine\Plugins\ScriptPlugin\Source\ScriptPlugin\ScriptPlugin.Build.cs
 C:\Program Files (x86)\Epic Games\4.10\Engine\Plugins\Slate\SlateRemote\Source\SlateRemote\SlateRemote.Build.cs
-Q:\Classes\3-2\AI\AISafari 4.10\Source\AISafari\AISafari.Build.cs
+D:\AI-Safari\AISafari\Source\AISafari\AISafari.Build.cs
 C:\Program Files (x86)\Epic Games\4.10\Engine\Source\UE4Editor.Target.cs
 C:\Program Files (x86)\Epic Games\4.10\Engine\Source\UE4Game.Target.cs
-Q:\Classes\3-2\AI\AISafari 4.10\Source\AISafari.Target.cs
-Q:\Classes\3-2\AI\AISafari 4.10\Source\AISafariEditor.Target.cs
+D:\AI-Safari\AISafari\Source\AISafari.Target.cs
+D:\AI-Safari\AISafari\Source\AISafariEditor.Target.cs

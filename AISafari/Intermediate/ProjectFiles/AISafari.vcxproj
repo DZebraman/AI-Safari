@@ -266,6 +266,8 @@
 		<ClInclude Include="..\..\Source\AISafari\BaseClasses\ActorReferenceStruct.h" />
 		<ClCompile Include="..\..\Source\AISafari\BaseClasses\AutoAgent.cpp" />
 		<ClInclude Include="..\..\Source\AISafari\BaseClasses\AutoAgent.h" />
+		<ClCompile Include="..\..\Source\AISafari\BaseClasses\EmuBrain.cpp" />
+		<ClInclude Include="..\..\Source\AISafari\BaseClasses\EmuBrain.h" />
 		<ClCompile Include="..\..\Source\AISafari\BaseClasses\FlockerBase.cpp" />
 		<ClInclude Include="..\..\Source\AISafari\BaseClasses\FlockerBase.h" />
 		<ClCompile Include="..\..\Source\AISafari\BaseClasses\FlockerManagerBase.cpp" />

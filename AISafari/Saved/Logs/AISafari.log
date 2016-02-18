@@ -1,397 +1,237 @@
-﻿[2016.02.17-01.59.18:870][  0]Log file open, 02/16/16 20:59:18
-[2016.02.17-01.59.18:870][  0]LogInit:Display: Running engine for game: AISafari
-[2016.02.17-01.59.18:870][  0]LogPlatformFile: Not using cached read wrapper
-[2016.02.17-01.59.18:870][  0]LogInit:Display: RandInit(-257381170) SRandInit(-257381170).
-[2016.02.17-01.59.18:870][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2016.02.17-01.59.18:870][  0]LogStats: Stats thread started at 0.219120
-[2016.02.17-01.59.18:870][  0]LogInit: Version: 4.10.2-2818068+++depot+UE4-Releases+4.10
-[2016.02.17-01.59.18:871][  0]LogInit: API Version: 2758231
-[2016.02.17-01.59.18:871][  0]LogInit: Compiled (64-bit): Jan  6 2016 17:36:42
-[2016.02.17-01.59.18:871][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.02.17-01.59.18:871][  0]LogInit: Build Configuration: Development
-[2016.02.17-01.59.18:871][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.02.17-01.59.18:871][  0]LogInit: Command line:  
-[2016.02.17-01.59.18:871][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.02.17-01.59.18:871][  0]LogInit: Rocket: 1
-[2016.02.17-01.59.18:881][  0]LogInit: Using libcurl 7.41.0
-[2016.02.17-01.59.18:881][  0]LogInit:  - built for x86_64-pc-win32
-[2016.02.17-01.59.18:881][  0]LogInit:  - supports SSL with WinSSL
-[2016.02.17-01.59.18:881][  0]LogInit:  - other features:
-[2016.02.17-01.59.18:881][  0]LogInit:      CURL_VERSION_SSL
-[2016.02.17-01.59.18:881][  0]LogInit:      CURL_VERSION_IPV6
-[2016.02.17-01.59.18:881][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.02.17-01.59.18:881][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.02.17-01.59.18:881][  0]LogInit:      CURL_VERSION_IDN
-[2016.02.17-01.59.18:881][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.02.17-01.59.18:881][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.02.17-01.59.18:881][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.02.17-01.59.18:881][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.02.17-01.59.18:881][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.02.17-01.59.18:885][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.02.17-01.59.18:889][  0]LogInit: Object subsystem initialized
-[2016.02.17-01.59.18:889][  0]LogInit: Selected Device Profile: [Windows]
-[2016.02.17-01.59.18:889][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.02.17-01.59.18:898][  0]LogInit: Computer: ZEBRADESKTOP
-[2016.02.17-01.59.18:898][  0]LogInit: User: Ryan
-[2016.02.17-01.59.18:898][  0]LogInit: CPU Page size=4096, Cores=4
-[2016.02.17-01.59.18:898][  0]LogInit: High frequency timer resolution =3.984658 MHz
-[2016.02.17-01.59.18:898][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2016.02.17-01.59.18:898][  0]LogMemory: Platform Memory Stats for Windows
-[2016.02.17-01.59.18:898][  0]LogMemory: Process Physical Memory: 56.09 MB used, 56.09 MB peak
-[2016.02.17-01.59.18:898][  0]LogMemory: Process Virtual Memory: 58.82 MB used, 58.82 MB peak
-[2016.02.17-01.59.18:898][  0]LogMemory: Physical Memory: 8444.57 MB used, 16325.73 MB total
-[2016.02.17-01.59.18:898][  0]LogMemory: Virtual Memory: 380.90 MB used, 134217728.00 MB total
-[2016.02.17-01.59.18:924][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.02.17-01.59.19:267][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 780 (Feature Level 11_0)
-[2016.02.17-01.59.19:267][  0]LogD3D11RHI: Adapter has 5971MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 3 output[s]
-[2016.02.17-01.59.19:268][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
-[2016.02.17-01.59.19:268][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 0 output[s]
-[2016.02.17-01.59.19:268][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.02.17-01.59.19:272][  0]LogD3D11RHI: !Direct3DDevice
-[2016.02.17-01.59.19:272][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.02.17-01.59.19:286][  0]LogD3D11RHI: Async texture creation enabled
-[2016.02.17-01.59.19:303][  0]LogShaderCompilers: Guid format shader working directory is 18 characters bigger than the processId version (Q:/Classes/3-2/AI/AISafari/Intermediate/Shaders/WorkingDirectory/14008/).
-[2016.02.17-01.59.19:303][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ryan/AppData/Local/Temp/UnrealShaderWorkingDir/134DF3A7418FE464D4EDA8AB8DF84D63/'.
-[2016.02.17-01.59.19:303][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.02.17-01.59.19:840][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.02.17-01.59.19:844][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.02.17-01.59.19:847][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.02.17-01.59.19:849][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.02.17-01.59.19:852][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.02.17-01.59.19:853][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.02.17-01.59.19:855][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.02.17-01.59.19:857][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.02.17-01.59.19:858][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.02.17-01.59.19:860][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.02.17-01.59.19:862][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.02.17-01.59.19:866][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.02.17-01.59.19:866][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.02.17-01.59.19:867][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.02.17-01.59.19:881][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.02.17-01.59.19:883][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.02.17-01.59.19:884][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.02.17-01.59.19:886][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.02.17-01.59.19:886][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.02.17-01.59.19:930][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.02.17-01.59.19:964][  0]LogDerivedDataCache: Loaded boot cache 0.03s 41MB C:/Users/Ryan/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.02.17-01.59.19:964][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ryan/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.02.17-01.59.19:964][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file Q:/Classes/3-2/AI/AISafari/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.02.17-01.59.19:964][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.02.17-01.59.19:964][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file Q:/Classes/3-2/AI/AISafari/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.02.17-01.59.19:964][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.02.17-01.59.20:002][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.02.17-01.59.20:014][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ryan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-1071.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-1489.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-1641.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-1694.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-3112.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-3182.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-3502.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-3693.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-3879.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-4078.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-4283.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:039][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-4944.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-5410.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-6033.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-6649.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-7900.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-8046.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-8379.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-8529.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-8767.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-8975.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:046][  0]LogModuleManager:Warning: Found module file Q:/Classes/3-2/AI/AISafari/Binaries/Win64/UE4Editor-AISafari-9371.dll (API version 2672455), but it was incompatible with the current engine API version (2758231). This is likely a stale module that must be recompiled.
-[2016.02.17-01.59.20:140][  0]LogInit: Selected Device Profile: [Windows]
-[2016.02.17-01.59.20:142][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.02.17-01.59.20:263][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.02.17-01.59.20:263][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.02.17-01.59.20:416][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.02.17-01.59.20:888][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.02.17-01.59.20:979][  0]LogAssetRegistry: FAssetRegistry took 0.0111 seconds to start up
-[2016.02.17-01.59.21:076][  0]SourceControl: Info Source control is disabled
-[2016.02.17-01.59.21:083][  0]SourceControl: Info Source control is disabled
-[2016.02.17-01.59.21:088][  0]SourceControl: Info Source control is disabled
-[2016.02.17-01.59.21:096][  0]SourceControl: Info Source control is disabled
-[2016.02.17-01.59.21:231][  0]LogObj: 28652 objects as part of root set at end of initial load.
-[2016.02.17-01.59.21:231][  0]LogUObjectAllocator: 6107520 out of 0 bytes used by permanent object pool.
-[2016.02.17-01.59.21:273][  0]LogEngine: Initializing Engine...
-[2016.02.17-01.59.21:276][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.02.17-01.59.21:276][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.02.17-01.59.21:369][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.02.17-01.59.21:375][  0]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.17-01.59.21:379][  0]LogInit: FAudioDevice initialized.
-[2016.02.17-01.59.21:401][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Ryan/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.02.17-01.59.21:405][  0]LogInit: Texture streaming: Enabled
-[2016.02.17-01.59.21:408][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.02.17-01.59.21:408][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.2-2818068+++depot+UE4-Releases+4.10
-[2016.02.17-01.59.21:408][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId d1f9beca401d8fe412e57fa88e66abb9|85745c8591404a23957796735eaccf05|defee072-9da8-4f68-a06a-f65b3a6c30bf
-[2016.02.17-01.59.21:408][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.02.17-01.59.21:416][  0]LogInit: Transaction tracking system initialized
-[2016.02.17-01.59.21:432][  0]BlueprintLog: New page: Editor Load
-[2016.02.17-01.59.21:474][  0]LocalizationService: Info Localization service is disabled
-[2016.02.17-01.59.21:524][  0]LogConsoleResponse:Display: 
-[2016.02.17-01.59.21:601][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.02.17-01.59.21:629][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Content/' took 0.01s
-[2016.02.17-01.59.21:629][  0]SourceControl: Info Source control is disabled
-[2016.02.17-01.59.21:629][  0]Cmd: MAP LOAD FILE="Q:/Classes/3-2/AI/AISafari/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.02.17-01.59.21:629][  0]LightingResults: New page: Lighting Build
-[2016.02.17-01.59.21:630][  0]MapCheck: New page: Map Check
-[2016.02.17-01.59.21:630][  0]LightingResults: New page: Lighting Build
-[2016.02.17-01.59.21:637][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000005DF7799D00
-[2016.02.17-01.59.21:800][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2016.02.17-01.59.21:804][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.02.17-01.59.21:805][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.02.17-01.59.21:834][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 29.348ms to complete.
-[2016.02.17-01.59.21:834][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.206
-[2016.02.17-01.59.21:950][  0]LogCollectionManager: Loaded 0 collections in 0.000924 seconds
-[2016.02.17-01.59.21:997][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Saved/Collections/' took 0.01s
-[2016.02.17-01.59.21:997][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Content/Developers/Ryan/Collections/' took 0.01s
-[2016.02.17-01.59.21:997][  0]LogFileCache: Scanning file cache for directory 'Q:/Classes/3-2/AI/AISafari/Content/Collections/' took 0.01s
-[2016.02.17-01.59.21:997][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2016.02.17-01.59.22:003][  0]LogContentBrowser: Native class hierarchy populated in 0.0056 seconds. Added 1897 classes and 341 folders.
-[2016.02.17-01.59.22:007][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0009 seconds. Added 0 classes and 0 folders.
-[2016.02.17-01.59.22:031][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
-[2016.02.17-01.59.22:034][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
-[2016.02.17-01.59.22:045][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.02.17-01.59.22:048][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.02.17-01.59.22:070][  0]LogLoad: Full Startup: 3.80 seconds (BP compile: 0.03 seconds)
-[2016.02.17-01.59.22:081][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.02.17-01.59.22:127][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.02.17-01.59.22:223][  0]LogRenderer: Reallocating scene render targets to support 1208x600 (Frame:2).
-[2016.02.17-01.59.22:428][  2]LogAssetRegistry: Asset discovery search completed in 1.4595 seconds
-[2016.02.17-01.59.22:428][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.02.17-01.59.22:428][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000023 seconds (updated 0 objects)
-[2016.02.17-01.59.25:954][417]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
-[2016.02.17-01.59.25:955][417]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.02.17-01.59.25:955][417]PIE: New page: PIE session: Minimal_Default (Feb 16, 2016, 3:59:25 PM)
-[2016.02.17-01.59.25:955][417]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2016.02.17-01.59.25:960][417]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005121s)
-[2016.02.17-01.59.25:960][417]LogAIModule: Creating AISystem for world Minimal_Default
-[2016.02.17-01.59.25:960][417]LogPlayLevel: PIE: World Init took: (0.000525s)
-[2016.02.17-01.59.25:961][417]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005806s)
-[2016.02.17-01.59.25:978][417]LogInit: XAudio2 using 'Speakers (ASUS Xonar DGX Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.17-01.59.25:981][417]LogInit: FAudioDevice initialized.
-[2016.02.17-01.59.26:022][417]LogWorld: Game class is 'AISafariGameMode'
-[2016.02.17-01.59.26:024][417]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.16-20.59.26
-[2016.02.17-01.59.26:024][417]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.17-01.59.26:024][417]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.17-01.59.26:024][417]LogWorld: Bringing up level for play took: 0.001556
-[2016.02.17-01.59.26:161][417]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.996
-[2016.02.17-01.59.26:161][417]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
-[2016.02.17-01.59.28:914][491]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
-[2016.02.17-01.59.28:955][491]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
-[2016.02.17-01.59.28:971][491]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000005DB01F85E0
-[2016.02.17-01.59.30:095][611]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.02.17-01.59.30:269][612]Cmd: QUIT_EDITOR
-[2016.02.17-01.59.30:453][612]LogExit: Preparing to exit.
-[2016.02.17-01.59.30:928][612]LogExit: Editor shut down
-[2016.02.17-01.59.30:928][612]LogExit: Transaction tracking system shut down
-[2016.02.17-01.59.30:929][612]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000005DE4CDF2E0
-[2016.02.17-01.59.30:929][612]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000005D82FA3880
-[2016.02.17-01.59.30:929][612]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000005DE4E4FB00
-[2016.02.17-01.59.31:019][612]LogExit: Object subsystem successfully closed.
-[2016.02.17-01.59.31:035][612]LogD3D11RHI: Shutdown
-[2016.02.17-01.59.31:035][612]LogD3D11RHI: CleanupD3DDevice
-[2016.02.17-01.59.31:161][612]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.02.17-01.59.31:173][612]LogModuleManager: Shutting down and abandoning module CrashTracker (199)
-[2016.02.17-01.59.31:173][612]LogModuleManager: Shutting down and abandoning module SceneOutliner (198)
-[2016.02.17-01.59.31:173][612]LogModuleManager: Shutting down and abandoning module SuperSearch (197)
-[2016.02.17-01.59.31:173][612]LogModuleManager: Shutting down and abandoning module WidgetCarousel (196)
-[2016.02.17-01.59.31:173][612]LogModuleManager: Shutting down and abandoning module AddContentDialog (195)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module EditorWidgets (194)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module CollectionManager (193)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module StatsViewer (192)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module FoliageEdit (191)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module LandscapeEditor (190)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module ActorPickerMode (189)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module GeometryMode (188)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module TextureAlignMode (187)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module BspMode (186)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module PlacementMode (185)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module AutomationWorker (184)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module CharacterAI (183)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module SmartSnapping (182)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module ViewportSnapping (181)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module LogVisualizer (180)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (179)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module IntroTutorials (178)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (177)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (176)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (175)
-[2016.02.17-01.59.31:175][612]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (174)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (173)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (172)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (171)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module MergeActors (170)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module SizeMap (169)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module TreeMap (168)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module ReferenceViewer (167)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module LocalizationService (166)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (165)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module HardwareTargeting (164)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (163)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module UndoHistory (162)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (161)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module UserFeedback (160)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module XmlParser (159)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module Blutility (158)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (157)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (156)
-[2016.02.17-01.59.31:498][612]LogModuleManager: Shutting down and abandoning module InputBindingEditor (155)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (154)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module SettingsEditor (153)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module ProjectLauncher (152)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module SessionFrontend (151)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module ProfilerClient (150)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (149)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module DeviceManager (148)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module AutomationController (147)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module AutomationWindow (146)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module Layers (145)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (144)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module DetailCustomizations (143)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module PackagesDialog (142)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module Persona (141)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module Kismet (140)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module GraphEditor (139)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module ClassViewer (138)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module Toolbox (137)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module ModuleUI (136)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module MovieSceneTools (135)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module OutputLog (134)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module GammaUI (133)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module Documentation (132)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (131)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (130)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module AnalyticsET (129)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module Analytics (128)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module AITestSuite (127)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module GameplayDebugger (126)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module AIModule (125)
-[2016.02.17-01.59.31:499][612]LogModuleManager: Shutting down and abandoning module ProfilerService (124)
-[2016.02.17-01.59.31:500][612]LogModuleManager: Shutting down and abandoning module TaskGraph (123)
-[2016.02.17-01.59.31:500][612]LogModuleManager: Shutting down and abandoning module SlateRemote (122)
-[2016.02.17-01.59.31:500][612]LogModuleManager: Shutting down and abandoning module SteamVRController (121)
-[2016.02.17-01.59.31:500][612]LogModuleManager: Shutting down and abandoning module SteamVR (120)
-[2016.02.17-01.59.31:500][612]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (119)
-[2016.02.17-01.59.31:500][612]LogModuleManager: Shutting down and abandoning module OculusLibrary (118)
-[2016.02.17-01.59.31:500][612]LogModuleManager: Shutting down and abandoning module OculusInput (117)
-[2016.02.17-01.59.31:500][612]LogModuleManager: Shutting down and abandoning module LeapMotionController (116)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (115)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module CableComponent (114)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (113)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module MessagingDebugger (112)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (111)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module HTML5Networking (110)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (109)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module PluginBrowser (108)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module EpicSurvey (107)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module DesktopPlatform (106)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (105)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module UObjectPlugin (104)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (103)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (102)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module SourceControl (101)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module GitSourceControl (100)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (99)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (98)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (97)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module MeshPaint (96)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module SlateReflector (95)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module HotReload (94)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module MainFrame (93)
-[2016.02.17-01.59.31:518][612]LogModuleManager: Shutting down and abandoning module LevelEditor (92)
-[2016.02.17-01.59.31:519][612]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (91)
-[2016.02.17-01.59.31:519][612]LogModuleManager: Shutting down and abandoning module AssetRegistry (90)
-[2016.02.17-01.59.31:613][612]LogModuleManager: Shutting down and abandoning module ContentBrowser (89)
-[2016.02.17-01.59.31:614][612]LogModuleManager: Shutting down and abandoning module Paper2DEditor (88)
-[2016.02.17-01.59.31:614][612]LogModuleManager: Shutting down and abandoning module AISafari (87)
-[2016.02.17-01.59.31:614][612]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
-[2016.02.17-01.59.31:715][612]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
-[2016.02.17-01.59.31:715][612]LogModuleManager: Shutting down and abandoning module Paper2D (84)
-[2016.02.17-01.59.31:715][612]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module Media (82)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module MessageLog (73)
-[2016.02.17-01.59.31:716][612]LogModuleManager: Shutting down and abandoning module Sequencer (72)
-[2016.02.17-01.59.31:717][612]LogModuleManager: Shutting down and abandoning module AssetTools (71)
-[2016.02.17-01.59.31:717][612]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
-[2016.02.17-01.59.31:717][612]LogModuleManager: Shutting down and abandoning module UMG (69)
-[2016.02.17-01.59.31:717][612]LogModuleManager: Shutting down and abandoning module Slate (68)
-[2016.02.17-01.59.31:717][612]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module SessionServices (66)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module Networking (61)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module Core (60)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
-[2016.02.17-01.59.31:718][612]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
-[2016.02.17-01.59.32:013][612]LogDerivedDataCache: Shutdown
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.02.17-01.59.32:013][612]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.02.17-01.59.34:017][612]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.02.17-01.59.34:018][612]LogExit: Exiting.
-[2016.02.17-01.59.34:020][612]Log file closed, 02/16/16 20:59:34
+﻿[2016.02.18-19.33.31:629][  0]Log file open, 02/18/16 14:33:31
+[2016.02.18-19.33.31:629][  0]LogInit:Display: Running engine for game: AISafari
+[2016.02.18-19.33.31:629][  0]LogPlatformFile: Not using cached read wrapper
+[2016.02.18-19.33.31:629][  0]LogInit:Display: RandInit(1512650904) SRandInit(1512650907).
+[2016.02.18-19.33.31:629][  0]LogTaskGraph: Started task graph with 4 named threads and 5 total threads.
+[2016.02.18-19.33.31:629][  0]LogStats: Stats thread started at 0.199247
+[2016.02.18-19.33.31:629][  0]LogInit:Warning: Incompatible or missing module: UE4Editor-AISafari.dll
+[2016.02.18-19.33.34:589][  0]Running C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/DotNET/UnrealBuildTool.exe AISafari Development Win64 -project="D:/AI-Safari/AISafari/AISafari.uproject" -rocket -editorrecompile -progress -noubtmakefiles -2015
+[2016.02.18-19.33.38:100][  0]@progress push 5%
+[2016.02.18-19.33.38:703][  0]Parsing headers for AISafariEditor
+[2016.02.18-19.33.38:803][  0]  Running UnrealHeaderTool "D:/AI-Safari/AISafari/AISafari.uproject" "D:\AI-Safari\AISafari\Intermediate\Build\Win64\AISafariEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -rocket -installed
+[2016.02.18-19.33.43:808][  0]Reflection code generated for AISafariEditor in 5.0665523 seconds
+[2016.02.18-19.33.44:008][  0]@progress pop
+[2016.02.18-19.33.46:116][  0]Performing 13 actions (2 in parallel)
+[2016.02.18-19.33.46:116][  0][2/13] Resource PCLaunch.rc
+[2016.02.18-19.33.46:116][  0]PCH.AISafari.h.cpp
+[2016.02.18-19.33.46:418][  0][3/13] Resource ModuleVersionResource.rc.inl
+[2016.02.18-19.34.03:048][  0]FlockerBase.cpp
+[2016.02.18-19.34.03:048][  0]AISafari.generated.cpp
+[2016.02.18-19.34.03:350][  0]D:\AI-Safari\AISafari\Source\AISafari\BaseClasses\FlockerBase.cpp(196): warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2016.02.18-19.34.03:350][  0]c:\program files (x86)\epic games\4.10\engine\source\runtime\core\public\math\Vector.h(1581): note: see declaration of 'FVector::ClampMaxSize'
+[2016.02.18-19.34.03:852][  0]FlockerManagerBase.cpp
+[2016.02.18-19.34.04:052][  0]OctTreeBase.cpp
+[2016.02.18-19.34.04:453][  0]OctantBase.cpp
+[2016.02.18-19.34.04:754][  0]AutoAgent.cpp
+[2016.02.18-19.34.04:954][  0]D:\AI-Safari\AISafari\Source\AISafari\BaseClasses\AutoAgent.cpp(24): warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2016.02.18-19.34.04:954][  0]c:\program files (x86)\epic games\4.10\engine\source\runtime\core\public\math\Vector.h(1581): note: see declaration of 'FVector::ClampMaxSize'
+[2016.02.18-19.34.04:955][  0]D:\AI-Safari\AISafari\Source\AISafari\BaseClasses\AutoAgent.cpp(27): warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2016.02.18-19.34.04:955][  0]c:\program files (x86)\epic games\4.10\engine\source\runtime\core\public\math\Vector.h(1581): note: see declaration of 'FVector::ClampMaxSize'
+[2016.02.18-19.34.04:955][  0]D:\AI-Safari\AISafari\Source\AISafari\BaseClasses\AutoAgent.cpp(29): warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2016.02.18-19.34.04:956][  0]c:\program files (x86)\epic games\4.10\engine\source\runtime\core\public\math\Vector.h(1581): note: see declaration of 'FVector::ClampMaxSize'
+[2016.02.18-19.34.04:956][  0]D:\AI-Safari\AISafari\Source\AISafari\BaseClasses\AutoAgent.cpp(34): warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2016.02.18-19.34.04:957][  0]c:\program files (x86)\epic games\4.10\engine\source\runtime\core\public\math\Vector.h(1581): note: see declaration of 'FVector::ClampMaxSize'
+[2016.02.18-19.34.04:957][  0]D:\AI-Safari\AISafari\Source\AISafari\BaseClasses\AutoAgent.cpp(37): warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2016.02.18-19.34.04:957][  0]c:\program files (x86)\epic games\4.10\engine\source\runtime\core\public\math\Vector.h(1581): note: see declaration of 'FVector::ClampMaxSize'
+[2016.02.18-19.34.04:958][  0]D:\AI-Safari\AISafari\Source\AISafari\BaseClasses\AutoAgent.cpp(39): warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2016.02.18-19.34.04:958][  0]c:\program files (x86)\epic games\4.10\engine\source\runtime\core\public\math\Vector.h(1581): note: see declaration of 'FVector::ClampMaxSize'
+[2016.02.18-19.34.04:959][  0]D:\AI-Safari\AISafari\Source\AISafari\BaseClasses\AutoAgent.cpp(59): warning C4996: 'FVector::ClampMaxSize': Deprecated due to unclear name, use GetClampedToMaxSize instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2016.02.18-19.34.04:959][  0]c:\program files (x86)\epic games\4.10\engine\source\runtime\core\public\math\Vector.h(1581): note: see declaration of 'FVector::ClampMaxSize'
+[2016.02.18-19.34.05:160][  0]AISafariGameMode.cpp
+[2016.02.18-19.34.05:261][  0]ActorReferenceStruct.cpp
+[2016.02.18-19.34.05:361][  0]AISafari.cpp
+[2016.02.18-19.34.05:863][  0][13/13] Link UE4Editor-AISafari.dll
+[2016.02.18-19.34.06:064][  0]   Creating library D:\AI-Safari\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari.lib and object D:\AI-Safari\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari.exp
+[2016.02.18-19.34.06:465][  0]-------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.02.18-19.34.06:465][  0]Total build time: 31.83 seconds
+[2016.02.18-19.34.07:015][  0]LogInit: Version: 4.10.3-2866931+++depot+UE4-Releases+4.10
+[2016.02.18-19.34.07:015][  0]LogInit: API Version: 2758231
+[2016.02.18-19.34.07:015][  0]LogInit: Compiled (64-bit): Feb 15 2016 08:20:45
+[2016.02.18-19.34.07:015][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.02.18-19.34.07:015][  0]LogInit: Build Configuration: Development
+[2016.02.18-19.34.07:015][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.02.18-19.34.07:015][  0]LogInit: Command line:  
+[2016.02.18-19.34.07:015][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.02.18-19.34.07:015][  0]LogInit: Rocket: 1
+[2016.02.18-19.34.07:038][  0]LogInit: Using libcurl 7.41.0
+[2016.02.18-19.34.07:038][  0]LogInit:  - built for x86_64-pc-win32
+[2016.02.18-19.34.07:038][  0]LogInit:  - supports SSL with WinSSL
+[2016.02.18-19.34.07:038][  0]LogInit:  - other features:
+[2016.02.18-19.34.07:038][  0]LogInit:      CURL_VERSION_SSL
+[2016.02.18-19.34.07:038][  0]LogInit:      CURL_VERSION_IPV6
+[2016.02.18-19.34.07:038][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.02.18-19.34.07:038][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.02.18-19.34.07:038][  0]LogInit:      CURL_VERSION_IDN
+[2016.02.18-19.34.07:038][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.02.18-19.34.07:038][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.02.18-19.34.07:038][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.02.18-19.34.07:038][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.02.18-19.34.07:038][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.02.18-19.34.07:048][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.02.18-19.34.07:053][  0]LogInit: Object subsystem initialized
+[2016.02.18-19.34.07:063][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.18-19.34.07:063][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.02.18-19.34.07:074][  0]LogInit: Computer: IMM-14
+[2016.02.18-19.34.07:074][  0]LogInit: User: mf7753
+[2016.02.18-19.34.07:074][  0]LogInit: CPU Page size=4096, Cores=2
+[2016.02.18-19.34.07:074][  0]LogInit: High frequency timer resolution =3.410067 MHz
+[2016.02.18-19.34.07:074][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.02.18-19.34.07:074][  0]LogMemory: Platform Memory Stats for Windows
+[2016.02.18-19.34.07:074][  0]LogMemory: Process Physical Memory: 59.80 MB used, 59.80 MB peak
+[2016.02.18-19.34.07:074][  0]LogMemory: Process Virtual Memory: 57.87 MB used, 57.87 MB peak
+[2016.02.18-19.34.07:074][  0]LogMemory: Physical Memory: 3144.37 MB used, 16308.36 MB total
+[2016.02.18-19.34.07:074][  0]LogMemory: Virtual Memory: 397.29 MB used, 134217728.00 MB total
+[2016.02.18-19.34.07:137][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.02.18-19.34.07:536][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970 (Feature Level 11_0)
+[2016.02.18-19.34.07:536][  0]LogD3D11RHI: Adapter has 4007MB of dedicated video memory, 0MB of dedicated system memory, and 8154MB of shared system memory, 1 output[s]
+[2016.02.18-19.34.07:544][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.02.18-19.34.07:544][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8154MB of shared system memory, 0 output[s]
+[2016.02.18-19.34.07:544][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.02.18-19.34.07:548][  0]LogD3D11RHI: !Direct3DDevice
+[2016.02.18-19.34.07:548][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.02.18-19.34.07:559][  0]LogD3D11RHI: Async texture creation enabled
+[2016.02.18-19.34.07:582][  0]LogShaderCompilers: Guid format shader working directory is 26 characters bigger than the processId version (D:/AI-Safari/AISafari/Intermediate/Shaders/WorkingDirectory/1556/).
+[2016.02.18-19.34.07:582][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'D:/Users/mf7753/AppData/Local/Temp/UnrealShaderWorkingDir/CC103DA14C534317B168A9BB3F0B781E/'.
+[2016.02.18-19.34.07:582][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.02.18-19.34.08:277][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.02.18-19.34.08:280][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.02.18-19.34.08:284][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.02.18-19.34.08:289][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.02.18-19.34.08:293][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.02.18-19.34.08:296][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.02.18-19.34.08:298][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.02.18-19.34.08:301][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.02.18-19.34.08:304][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.02.18-19.34.08:306][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.02.18-19.34.08:309][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.02.18-19.34.08:314][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.02.18-19.34.08:314][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.02.18-19.34.08:316][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.02.18-19.34.08:333][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.02.18-19.34.08:335][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.02.18-19.34.08:337][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.02.18-19.34.08:340][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.02.18-19.34.08:340][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.02.18-19.34.08:413][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.02.18-19.34.08:414][  0]LogDerivedDataCache:Display: Starting with empty Boot cache
+[2016.02.18-19.34.08:414][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/AI-Safari/AISafari/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.02.18-19.34.08:414][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.02.18-19.34.08:414][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/AI-Safari/AISafari/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.02.18-19.34.08:414][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.02.18-19.34.08:460][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.02.18-19.34.08:472][  0]LogDerivedDataCache: Using Local data cache path D:/Users/mf7753/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.02.18-19.34.08:781][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.18-19.34.08:786][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.02.18-19.34.08:903][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.02.18-19.34.08:903][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.02.18-19.34.09:205][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.02.18-19.34.09:843][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.02.18-19.34.09:955][  0]LogAssetRegistry: FAssetRegistry took 0.0108 seconds to start up
+[2016.02.18-19.34.10:132][  0]SourceControl: Info Source control is disabled
+[2016.02.18-19.34.10:169][  0]SourceControl: Info Source control is disabled
+[2016.02.18-19.34.10:180][  0]SourceControl: Info Source control is disabled
+[2016.02.18-19.34.10:189][  0]SourceControl: Info Source control is disabled
+[2016.02.18-19.34.10:430][  0]LogObj: 28652 objects as part of root set at end of initial load.
+[2016.02.18-19.34.10:430][  0]LogUObjectAllocator: 6107520 out of 0 bytes used by permanent object pool.
+[2016.02.18-19.34.10:487][  0]LogEngine: Initializing Engine...
+[2016.02.18-19.34.10:490][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.02.18-19.34.10:492][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.02.18-19.34.10:636][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.02.18-19.34.10:650][  0]LogInit: XAudio2 using 'Speakers / Headphones (3- Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.02.18-19.34.10:682][  0]LogInit: FAudioDevice initialized.
+[2016.02.18-19.34.10:698][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB D:/Users/mf7753/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.02.18-19.34.10:703][  0]LogInit: Texture streaming: Enabled
+[2016.02.18-19.34.10:709][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.02.18-19.34.10:709][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.3-2866931+++depot+UE4-Releases+4.10
+[2016.02.18-19.34.10:709][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 19436b9c4bf3e397854cc683670877db|bf53cbffe59f4e9db34bcfb7c5342fed|28f313b4-5acb-499d-8f9f-e1729882657c
+[2016.02.18-19.34.10:709][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.02.18-19.34.10:717][  0]LogInit: Transaction tracking system initialized
+[2016.02.18-19.34.10:745][  0]BlueprintLog: New page: Editor Load
+[2016.02.18-19.34.10:826][  0]LocalizationService: Info Localization service is disabled
+[2016.02.18-19.34.10:905][  0]LogConsoleResponse:Display: 
+[2016.02.18-19.34.11:018][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.02.18-19.34.11:076][  0]LogFileCache: Scanning file cache for directory 'D:/AI-Safari/AISafari/Content/' took 0.01s
+[2016.02.18-19.34.11:076][  0]SourceControl: Info Source control is disabled
+[2016.02.18-19.34.11:076][  0]Cmd: MAP LOAD FILE="D:/AI-Safari/AISafari/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.02.18-19.34.11:077][  0]LightingResults: New page: Lighting Build
+[2016.02.18-19.34.11:081][  0]MapCheck: New page: Map Check
+[2016.02.18-19.34.11:081][  0]LightingResults: New page: Lighting Build
+[2016.02.18-19.34.11:100][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000BDF4769D00
+[2016.02.18-19.34.11:326][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.18-19.34.11:340][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.02.18-19.34.11:341][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.02.18-19.34.11:390][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 48.631ms to complete.
+[2016.02.18-19.34.11:390][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.314
+[2016.02.18-19.34.11:502][  0]LogCollectionManager: Loaded 0 collections in 0.001662 seconds
+[2016.02.18-19.34.11:542][  0]LogFileCache: Scanning file cache for directory 'D:/AI-Safari/AISafari/Saved/Collections/' took 0.01s
+[2016.02.18-19.34.11:542][  0]LogFileCache: Scanning file cache for directory 'D:/AI-Safari/AISafari/Content/Developers/mf7753/Collections/' took 0.01s
+[2016.02.18-19.34.11:542][  0]LogFileCache: Scanning file cache for directory 'D:/AI-Safari/AISafari/Content/Collections/' took 0.01s
+[2016.02.18-19.34.11:542][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.02.18-19.34.11:549][  0]LogContentBrowser: Native class hierarchy populated in 0.0067 seconds. Added 1897 classes and 341 folders.
+[2016.02.18-19.34.11:556][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2016.02.18-19.34.11:815][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2016.02.18-19.34.11:820][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0014 seconds. Added 1 classes and 2 folders.
+[2016.02.18-19.34.11:839][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.02.18-19.34.11:845][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.02.18-19.34.11:867][  0]LogLoad: Full Startup: 41.30 seconds (BP compile: 0.04 seconds)
+[2016.02.18-19.34.11:878][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.02.18-19.34.11:915][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.02.18-19.34.12:025][  0]LogRenderer: Reallocating scene render targets to support 1208x572 (Frame:2).
+[2016.02.18-19.34.12:279][  4]LogAssetRegistry: Asset discovery search completed in 2.3347 seconds
+[2016.02.18-19.34.12:279][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.02.18-19.34.12:279][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000026 seconds (updated 0 objects)
+[2016.02.18-19.34.37:374][881]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.18-19.34.37:375][881]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.18-19.34.37:375][881]PIE: New page: PIE session: Minimal_Default (Feb 18, 2016, 9:34:37 AM)
+[2016.02.18-19.34.37:375][881]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.02.18-19.34.37:382][881]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006709s)
+[2016.02.18-19.34.37:382][881]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.18-19.34.37:382][881]LogPlayLevel: PIE: World Init took: (0.000703s)
+[2016.02.18-19.34.37:382][881]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007629s)
+[2016.02.18-19.34.37:406][881]LogInit: XAudio2 using 'Speakers / Headphones (3- Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.02.18-19.34.37:414][881]LogInit: FAudioDevice initialized.
+[2016.02.18-19.34.37:457][881]LogWorld: Game class is 'AISafariGameMode'
+[2016.02.18-19.34.37:461][881]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.02.18-14.34.37
+[2016.02.18-19.34.37:461][881]LogActor:Warning: GameSession /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.18-19.34.37:461][881]LogActor:Warning: GameNetworkManager /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.18-19.34.37:462][881]LogWorld: Bringing up level for play took: 0.001971
+[2016.02.18-19.34.37:631][881]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.952
+[2016.02.18-19.34.37:632][881]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.18-19.34.51:605][294]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.18-19.34.51:641][294]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.02.18-19.34.51:665][294]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000BD81350540
+[2016.02.18-19.35.45:725][747]Running C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="D:/AI-Safari/AISafari/AISafari.uproject" -game -rocket -progress -2015
+[2016.02.18-19.35.46:029][747]Discovering modules, targets and source code for game...
+[2016.02.18-19.35.49:848][747]LogVSAccessor:Warning: Couldn't access Visual Studio
+[2016.02.18-19.35.49:854][747]Recompiling AISafari...
+[2016.02.18-19.35.49:854][747]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/DotNET/UnrealBuildTool.exe AISafari -ModuleWithSuffix AISafari 3851 Win64 Development -editorrecompile -canskiplink "D:/AI-Safari/AISafari/AISafari.uproject" -rocket  -rocket -2015]
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: New page: Compilation - Feb 18, 2016, 9:36:01 AM
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info Performing full C++ include scan (hot reloading a new target)
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info Creating makefile for hot reloading AISafari (game project files are newer)
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info Parsing headers for AISafariEditor
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info   Running UnrealHeaderTool "D:/AI-Safari/AISafari/AISafari.uproject" "D:\AI-Safari\AISafari\Intermediate\Build\Win64\AISafariEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -rocket -installed
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info Reflection code generated for AISafariEditor in 4.9129427 seconds
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info Performing 3 actions (2 in parallel)
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info AISafari.generated.cpp
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info EmuBrain.cpp
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info [3/3] Link UE4Editor-AISafari-3851.dll
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info    Creating library D:\AI-Safari\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-3851.lib and object D:\AI-Safari\AISafari\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-AISafari-3851.exp
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.02.18-19.36.01:909][747]CompilerResultsLog: Info Total build time: 11.98 seconds
+[2016.02.18-19.36.01:909][747]LogMainFrame: MainFrame: Module compiling took 12.062 seconds
+[2016.02.18-19.36.01:953][747]LogClass: Could not find existing class EmuBrain in package /Script/AISafari for HotReload, assuming new class
+[2016.02.18-19.36.01:956][747]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0017 seconds. Added 5 classes and 3 folders.
+[2016.02.18-19.36.01:957][747]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.18-19.36.02:006][747]LogContentBrowser: Native class hierarchy populated in 0.0073 seconds. Added 1899 classes and 343 folders.
+[2016.02.18-19.36.02:008][747]Warning: HotReload operation took 12.2s.
+[2016.02.18-19.36.02:056][747]LogHotReload: New module detected: UE4Editor-AISafari-3851.dll
+[2016.02.18-19.36.02:074][748]LogHotReload: Starting Hot-Reload from IDE
+[2016.02.18-19.36.02:122][748]LogContentBrowser: Native class hierarchy updated for 'AISafari' in 0.0015 seconds. Added 5 classes and 3 folders.
+[2016.02.18-19.36.02:123][748]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.02.18-19.36.02:134][748]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 1899 classes and 343 folders.
+[2016.02.18-19.36.46:528][863]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.02.18-19.36.46:957][864]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.02.18-19.36.47:290][865]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.02.18-19.36.50:126][866]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.02.18-19.36.50:159][867]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal 

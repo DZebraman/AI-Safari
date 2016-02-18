@@ -14,6 +14,9 @@
 #ifndef AISAFARI_FlockerBase_generated_h
 	#include "BaseClasses/FlockerBase.h"
 #endif
+#ifndef AISAFARI_EmuBrain_generated_h
+	#include "BaseClasses/EmuBrain.h"
+#endif
 #ifndef AISAFARI_FlockerManagerBase_generated_h
 	#include "BaseClasses/FlockerManagerBase.h"
 #endif

@@ -21,6 +21,10 @@ void EmptyLinkFunctionForGeneratedCodeAISafari() {}
 	{
 	}
 	IMPLEMENT_CLASS(AFlockerBase, 2705381589);
+	void AEmuBrain::StaticRegisterNativesAEmuBrain()
+	{
+	}
+	IMPLEMENT_CLASS(AEmuBrain, 4108633589);
 	void AFlockerManagerBase::StaticRegisterNativesAFlockerManagerBase()
 	{
 	}
@@ -37,6 +41,8 @@ void EmptyLinkFunctionForGeneratedCodeAISafari() {}
 	AISAFARI_API class UClass* Z_Construct_UClass_AAutoAgent();
 	AISAFARI_API class UClass* Z_Construct_UClass_AFlockerBase_NoRegister();
 	AISAFARI_API class UClass* Z_Construct_UClass_AFlockerBase();
+	AISAFARI_API class UClass* Z_Construct_UClass_AEmuBrain_NoRegister();
+	AISAFARI_API class UClass* Z_Construct_UClass_AEmuBrain();
 	AISAFARI_API class UClass* Z_Construct_UClass_AFlockerManagerBase_NoRegister();
 	AISAFARI_API class UClass* Z_Construct_UClass_AFlockerManagerBase();
 	AISAFARI_API class UPackage* Z_Construct_UPackage_AISafari();
@@ -157,6 +163,37 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFlockerBase(Z_Construct_UClass_AFlockerBase, TEXT("AFlockerBase"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFlockerBase);
+	UClass* Z_Construct_UClass_AEmuBrain_NoRegister()
+	{
+		return AEmuBrain::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AEmuBrain()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AFlockerBase();
+			Z_Construct_UPackage_AISafari();
+			OuterClass = AEmuBrain::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BaseClasses/EmuBrain.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BaseClasses/EmuBrain.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AEmuBrain(Z_Construct_UClass_AEmuBrain, TEXT("AEmuBrain"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AEmuBrain);
 	UClass* Z_Construct_UClass_AFlockerManagerBase_NoRegister()
 	{
 		return AFlockerManagerBase::StaticClass();
@@ -210,8 +247,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/AISafari")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x62F63EA8;
-			Guid.B = 0xAF819E7C;
+			Guid.A = 0xBD0BEADC;
+			Guid.B = 0xFC91C5E9;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
